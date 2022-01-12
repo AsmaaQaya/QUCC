@@ -10,16 +10,18 @@
 
 		<!-- Import Stylesheets -->
 		<link rel="stylesheet" type="text/css" href="css/colors.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animations.css"/>
 		<link rel="stylesheet" type="text/css" href="css/global.css"/>
-		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="css/landing.css"/>
 
 	</head>
 
 	<!-- Body -->
 	<body>
 
-		<!-- Header -->
-		<header class='header'>
+		<!-- Navbar -->
+		<header class='navbar'>
 			
 			<!-- Logo -->
 			<h1 class='logo'>QUCC</h1>
@@ -73,30 +75,61 @@
 
 		</header>
 
-		<section>
-			<article>
-				<h6 style="color: #eaece5;margin-top: 20%;">QUCC presents....</h6>
-				<h1 style="font-size: 50px;margin: 0px;">
-					EXPLORE WEBDEV
-				</h1>
-				<hr id = "landinghr">
-				<p style="color: #eaece5;">
-					a series of 3 events that introduces you to the wonders of web development.
+		<!-- Landing Section -->
+		<section class='landing'>
+
+			<!-- Background Pattern -->
+			<img class='background' src="images/Landing_Section_Background.svg"/>
+			
+			<!-- Title -->
+			<div class='title'>
+
+				<!-- Pretext -->
+				<p class='pretext'>QUCC presents...</p>
+
+				<!-- Header -->
+				<h1 class='header'>EXPLORE WEBDEV</h1>
+
+				<!-- Underline -->
+				<div class='underline'>
+
+					<!-- Dots -->
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+
+				</div>
+
+				<!-- Meta -->
+				<p class='meta'>
+					a series of three events that introduces you to the wonders of <br/>
+					web development.
 				</p>
-			</article>
-			<article>
-				<!-- not sure if its button that do task or link that takes somewhere it will be better if it were to take to teams link for the event -->
-				<a href="#" id = "landingButton">Get Started</a>
-			</article>
+
+			</div>
+
+			<!-- Call To Action -->
+			<button class='button'>EXPLORE</button>
+
+			<!-- Dots Container -->
+			<div class='dots'>
+
+				<!-- Dots -->
+				<div class='dot' style='animation-delay: 0s'></div>
+				<div class='dot' style='animation-delay: 0.25s'></div>
+				<div class='dot' style='animation-delay: 0.5s'></div>
+
+			</div>
+
 		</section>
 			
 
-		<footer>
+		<!-- <footer>
 			<p id="first">COPYRIGHT &copy;2022. ALL RIGHTS RESERVED TO QUCC</p>
 			<p id="second">
-				<!-- <a  href="#">
+				<a  href="#">
 				<img src="thumbnails/facebook.png" alt="facebook"  class = "th_img"/>
-				</a>-->			
+				</a>			
 				<a href="https://twitter.com/ComputingClubQU" target="_blank" >
 					<img src="thumbnails/twitter.png" alt="twitter" class = "th_img" />
 				</a>
@@ -107,7 +140,8 @@
 					<img src="thumbnails/discord.jpg" alt="discord" class = "th_img" />
 				</a>
 			</p>
-		</footer>
+		</footer> -->
+
 	</body>
 
 </html>

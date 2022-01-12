@@ -1,10 +1,10 @@
-/* Header */
-.header {
+/* Navbar */
+.navbar {
 	position		: relative;
-	max-width		: 100em;
-	width			: 100%;
+	max-width		: 1600px;
+	width			: 90vw;
 
-	margin-top		: 2.5em;
+	margin-top		: 50px;
 
 	display			: flex;
 	flex-direction		: row;
@@ -12,8 +12,8 @@
 	align-items		: center;
 }
 
-/* Header Logo */
-.header .logo {
+/* Navbar Logo */
+.navbar .logo {
 	position		: absolute;
 	left			: 0;
 
@@ -26,8 +26,8 @@
 	font-weight		: bold;
 }
 
-/* Header Link */
-.header .link {
+/* Navbar Link */
+.navbar .link {
 	cursor			: pointer;
 
 	display			: flex;
@@ -36,8 +36,8 @@
 	align-items		: center;
 }
 
-/* Header Link Text */
-.header .link .text {
+/* Navbar Link Text */
+.navbar .link .text {
 	margin			: 0;
 
 	color			: var(--text-primary);
@@ -46,8 +46,8 @@
 	font-size		: 18px;
 }
 
-/* Header Link Underline */
-.header .link .underline {
+/* Navbar Link Underline */
+.navbar .link .underline {
 	position		: absolute;
 	width			: 50px;
 	height			: 1px;
@@ -57,21 +57,21 @@
 
 	transform		: scaleX(0);
 
-	transition		: 0.15s cubic-bezier(0.34,-0.39, 0.68, 1.38) 0s;
+	transition		: 0.25s cubic-bezier(0.4, 0, 0.6, 1) 0s;
 }
 
-/* Header Active Link Underline */
-.header .active.link .underline {
+/* Navbar Active Link Underline */
+.navbar .active.link .underline {
 	transform		: scaleX(100%);
 }
 
-/* Header Link Hover Underline */
-.header .link:hover .underline {
-	transform		: scaleX(100%);
+/* Navbar Link Hover Underline */
+.navbar .link:hover .underline {
+	transform		: scaleX(110%);
 }
 
-/* Header Seperator */
-.header .seperator {
+/* Navbar Seperator */
+.navbar .seperator {
 	width			: 4px;
 	height			: 4px;
 
