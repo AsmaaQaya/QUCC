@@ -1,0 +1,83 @@
+/* Header */
+.header {
+	position		: relative;
+	max-width		: 100em;
+	width			: 100%;
+
+	margin-top		: 2.5em;
+
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Header Logo */
+.header .logo {
+	position		: absolute;
+	left			: 0;
+
+	margin			: 0;
+
+	color			: var(--text-primary);
+
+	font-family		: Sulphur Point;
+	font-size		: 32px;
+	font-weight		: bold;
+}
+
+/* Header Link */
+.header .link {
+	cursor			: pointer;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Header Link Text */
+.header .link .text {
+	margin			: 0;
+
+	color			: var(--text-primary);
+
+	font-family		: Sulphur Point;
+	font-size		: 18px;
+}
+
+/* Header Link Underline */
+.header .link .underline {
+	position		: absolute;
+	width			: 50px;
+	height			: 1px;
+	bottom			: 0;
+
+	background-color	: var(--text-primary);
+
+	transform		: scaleX(0);
+
+	transition		: 0.15s cubic-bezier(0.34,-0.39, 0.68, 1.38) 0s;
+}
+
+/* Header Active Link Underline */
+.header .active.link .underline {
+	transform		: scaleX(100%);
+}
+
+/* Header Link Hover Underline */
+.header .link:hover .underline {
+	transform		: scaleX(100%);
+}
+
+/* Header Seperator */
+.header .seperator {
+	width			: 4px;
+	height			: 4px;
+
+	margin-left		: 28px;
+	margin-right		: 28px;
+
+	background-color	: var(--text-secondary);
+	border-radius		: 2px;
+}
