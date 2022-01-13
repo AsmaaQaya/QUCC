@@ -3,7 +3,7 @@
 	position		: relative;
 	width			: 100%;
 
-	margin-top		: 20vh;
+	margin-top		: 27.5vh;
 
 	display			: flex;
 	flex-direction		: column;
@@ -104,12 +104,14 @@
 
 	box-shadow		: 0 8px 25px rgba(0, 0, 0, 0.15);
 
-	transition		: 0.25s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
 }
 
 /* Call to Action Hover */
 .landing .button:hover {
 	border-radius		: 5px;
+
+	transform		: scale(1.05);
 }
 
 /* Dots */

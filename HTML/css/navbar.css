@@ -1,15 +1,44 @@
 /* Navbar */
 .navbar {
-	position		: relative;
+	position		: absolute;
 	max-width		: 1600px;
 	width			: 90vw;
 
-	margin-top		: 50px;
+	padding-top		: 50px;
+	padding-bottom		: 25px;
 
 	display			: flex;
 	flex-direction		: row;
 	justify-content		: center;
 	align-items		: center;
+
+	z-index			: 10;
+}
+
+/* Fixed Navbar */
+.fixed.navbar {
+	position		: fixed;
+	top			: 0;
+
+	padding-top		: 25px;
+}
+
+/* Navbar Background */
+.navbar .background {
+	position		: absolute;
+	width			: 100vw;
+	height			: 100%;
+
+	z-index			: -1;
+
+	background-color	: var(--background-primary);
+
+	transition		: 0.25s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Fixed Navbar Background */
+.fixed.navbar .background {
+	box-shadow		: 0 4px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* Navbar Logo */
@@ -29,6 +58,8 @@
 /* Navbar Link */
 .navbar .link {
 	cursor			: pointer;
+
+	position		: relative;
 
 	display			: flex;
 	flex-direction		: column;
