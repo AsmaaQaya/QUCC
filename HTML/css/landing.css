@@ -1,0 +1,136 @@
+/* Landing */
+.landing {
+	position		: relative;
+	width			: 100%;
+
+	margin-top		: 20vh;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: flex-start;
+	align-items		: center;
+}
+
+/* Background Pattern */
+.landing .background {
+	position		: absolute;
+
+	z-index			: -1;
+
+	transform		: translate(110px, -170px);
+}
+
+/* Title */
+.landing .title {
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Pretext */
+.landing .title .pretext {
+	margin-bottom		: 5px;
+
+	color			: var(--text-tertiary);
+
+	font-family		: Sulphur Point;
+	font-size		: 24px;
+}
+
+/* Header */
+.landing .title .header {
+	margin-top		: 5px;
+	margin-bottom		: 0px;
+
+	color			: var(--theme-primary);
+
+	font-family		: Spartan;
+	font-size		: 48px;
+	font-weight		: 900;
+}
+
+/* Underline */
+.landing .title .underline {
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Underline Dot */
+.landing .title .underline .dot {
+	width			: 4px;
+	height			: 4px;
+
+	margin-left		: 10px;
+	margin-right		: 10px;
+
+	background-color	: var(--theme-primary);
+	border-radius		: 2px;
+}
+
+/* Meta */
+.landing .title .meta {
+	margin-top		: 20px;
+	color			: var(--text-secondary);
+
+	font-family		: Spartan;
+	font-size		: 14px;
+	text-align		: center;
+}
+
+/* Call to Action */
+.landing .button {
+	cursor			: pointer;
+
+	width			: 200px;
+	height			: 50px;
+
+	margin-top		: 40px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	color			: var(--text-quaternary);
+	background-color	: var(--theme-primary);
+	border			: none;
+	border-radius		: 25px;
+
+	font-family		: Sulphur Point;
+	font-size		: 14px;
+	font-weight		: bold;
+
+	box-shadow		: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+	transition		: 0.25s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Call to Action Hover */
+.landing .button:hover {
+	border-radius		: 5px;
+}
+
+/* Dots */
+.dots {
+	margin-top		: 100px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Dot */
+.dots .dot {
+	width			: 4px;
+	height			: 4px;
+
+	margin-top		: 50px;
+
+	background-color	: var(--background-tertiary);
+	border-radius		: 2px;
+	
+	animation		: dot_pulse 2.5s ease-in-out 0s infinite;
+}

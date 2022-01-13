@@ -1,0 +1,83 @@
+/* Navbar */
+.navbar {
+	position		: relative;
+	max-width		: 1600px;
+	width			: 90vw;
+
+	margin-top		: 50px;
+
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Navbar Logo */
+.navbar .logo {
+	position		: absolute;
+	left			: 0;
+
+	margin			: 0;
+
+	color			: var(--text-primary);
+
+	font-family		: Sulphur Point;
+	font-size		: 32px;
+	font-weight		: bold;
+}
+
+/* Navbar Link */
+.navbar .link {
+	cursor			: pointer;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Navbar Link Text */
+.navbar .link .text {
+	margin			: 0;
+
+	color			: var(--text-primary);
+
+	font-family		: Sulphur Point;
+	font-size		: 18px;
+}
+
+/* Navbar Link Underline */
+.navbar .link .underline {
+	position		: absolute;
+	width			: 50px;
+	height			: 1px;
+	bottom			: 0;
+
+	background-color	: var(--text-primary);
+
+	transform		: scaleX(0);
+
+	transition		: 0.25s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Navbar Active Link Underline */
+.navbar .active.link .underline {
+	transform		: scaleX(100%);
+}
+
+/* Navbar Link Hover Underline */
+.navbar .link:hover .underline {
+	transform		: scaleX(110%);
+}
+
+/* Navbar Seperator */
+.navbar .seperator {
+	width			: 4px;
+	height			: 4px;
+
+	margin-left		: 28px;
+	margin-right		: 28px;
+
+	background-color	: var(--text-secondary);
+	border-radius		: 2px;
+}

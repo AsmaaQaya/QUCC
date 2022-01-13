@@ -1,0 +1,18 @@
+/* Landing Page Dot Pulse */
+@keyframes dot_pulse {
+	0% {
+		background-color	: var(--background-tertiary);
+	}
+	25% {
+		background-color	: var(--background-tertiary);
+	}
+	50% {
+		background-color	: var(--theme-primary);
+	}
+	75% {
+		background-color	: var(--background-tertiary);
+	}
+	100% {
+		background-color	: var(--background-tertiary);
+	}
+}

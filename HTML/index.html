@@ -1,63 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8"/>
-	<title>Web Development Event</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-</head>
-<body>
-	<header>
-		<h1 id="header">QUCC</h1>	
-		<nav>
-			<ul>
-				<li  id = "li"><a class="list" href="index.html">Landing</a></li>
-				<li><a class="list" href="events.html">Events</a></li>
-				<li><a class="list" href="elements.html">Elements</a></li>
-				<li><a class="list" href="todoList.html">Finished Product</a></li>
-			</ul>
-	</nav>
-	</header>
-	
 
+	<!-- Head -->
+	<head>
 
-	<!-- <aside>
-		<img class = "homeimg" src="images/first.jpg" alt="Inner Pool" />
-	</aside> -->
+		<!-- Tags -->
+		<meta charset="UTF-8"/>
+		<title>Explore WebDev</title>
 
-	<section>
-		<article>
-			<h6 style="color: #eaece5;margin-top: 20%;">QUCC presents....</h6>
-			<h1 style="font-size: 50px;margin: 0px;">
-				EXPLORE WEBDEV
-			</h1>
-			<hr id = "landinghr">
-			<p style="color: #eaece5;">
-				a series of 3 events that introduces you to the wonders of web development.
+		<!-- Import Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/colors.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animations.css"/>
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="css/landing.css"/>
+
+		<!-- Import Scripts -->
+		<script src="js/mouse_parallax.js"></script>
+
+	</head>
+
+	<!-- Body -->
+	<body>
+
+		<!-- Navbar -->
+		<header class='navbar'>
+			
+			<!-- Logo -->
+			<h1 class='logo'>QUCC</h1>
+
+			<!-- Links -->
+			<a class='active link'>
+
+				<!-- Text -->
+				<p class='text'>LANDING</p>
+				
+				<!-- Underline -->
+				<div class='underline'></div>
+
+			</a>
+
+			<span class='seperator'></span>
+
+			<a class='link'>
+
+				<!-- Text -->
+				<p class='text'>EVENTS</p>
+				
+				<!-- Underline -->
+				<div class='underline'></div>
+
+			</a>
+
+			<span class='seperator'></span>
+			
+			<a class='link'>
+
+				<!-- Text -->
+				<p class='text'>ELEMENTS</p>
+				
+				<!-- Underline -->
+				<div class='underline'></div>
+
+			</a>
+
+			<span class='seperator'></span>
+
+			<a class='link'>
+
+				<!-- Text -->
+				<p class='text'>FINISHED PRODUCT</p>
+				
+				<!-- Underline -->
+				<div class='underline'></div>
+
+			</a>
+
+		</header>
+
+		<!-- Landing Section -->
+		<section class='landing'>
+
+			<!-- Background Pattern -->
+			<img class='background' src="images/Landing_Section_Background.svg"/>
+			
+			<!-- Title -->
+			<div class='title'>
+
+				<!-- Pretext -->
+				<p class='pretext'>QUCC presents...</p>
+
+				<!-- Header -->
+				<h1 class='header'>EXPLORE WEBDEV</h1>
+
+				<!-- Underline -->
+				<div class='underline'>
+
+					<!-- Dots -->
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+
+				</div>
+
+				<!-- Meta -->
+				<p class='meta'>
+					a series of three events that introduces you to the wonders of <br/>
+					web development.
+				</p>
+
+				<!-- Call To Action -->
+				<button class='button'>EXPLORE</button>
+
+			</div>
+
+			<!-- Dots Container -->
+			<div class='dots'>
+
+				<!-- Dots -->
+				<div class='dot' style='animation-delay: 0s'></div>
+				<div class='dot' style='animation-delay: 0.25s'></div>
+				<div class='dot' style='animation-delay: 0.5s'></div>
+
+			</div>
+
+		</section>
+			
+
+		<!-- <footer>
+			<p id="first">COPYRIGHT &copy;2022. ALL RIGHTS RESERVED TO QUCC</p>
+			<p id="second">
+				<a  href="#">
+				<img src="thumbnails/facebook.png" alt="facebook"  class = "th_img"/>
+				</a>			
+				<a href="https://twitter.com/ComputingClubQU" target="_blank" >
+					<img src="thumbnails/twitter.png" alt="twitter" class = "th_img" />
+				</a>
+				<a href="https://www.instagram.com/computing.club/?utm_medium=copy_link" target="_blank">
+					<img src="thumbnails/instragram.png" alt="instragram" class = "th_img" />
+				</a>
+				<a href="https://discord.com/invite/rnRqgeyKYp" target="_blank">
+					<img src="thumbnails/discord.jpg" alt="discord" class = "th_img" />
+				</a>
 			</p>
-		</article>
-		<article>
-			<!-- not sure if its button that do task or link that takes somewhere it will be better if it were to take to teams link for the event -->
-			<a href="#" id = "landingButton">Get Started</a>
-		</article>
-	</section>
-		
+		</footer> -->
 
-	<footer>
-		<p id="first">COPYRIGHT &copy;2022. ALL RIGHTS RESERVED TO QUCC</p>
-		<p id="second">
-			<!-- <a  href="#">
-			<img src="thumbnails/facebook.png" alt="facebook"  class = "th_img"/>
-			</a>-->			
-			<a href="https://twitter.com/ComputingClubQU" target="_blank" >
-				<img src="thumbnails/twitter.png" alt="twitter" class = "th_img" />
-			</a>
-			<a href="https://www.instagram.com/computing.club/?utm_medium=copy_link" target="_blank">
-				<img src="thumbnails/instragram.png" alt="instragram" class = "th_img" />
-			</a>
-			<a href="https://discord.com/invite/rnRqgeyKYp" target="_blank">
-				<img src="thumbnails/discord.jpg" alt="discord" class = "th_img" />
-			</a>
-		</p>
-	</footer>
-</body>
+	</body>
+
 </html>
