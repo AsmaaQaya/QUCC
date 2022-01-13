@@ -13,6 +13,8 @@
 	align-items		: center;
 
 	z-index			: 10;
+
+	animation-delay		: 5.5s !important;
 }
 
 /* Fixed Navbar */

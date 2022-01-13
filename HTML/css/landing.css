@@ -18,6 +18,8 @@
 	z-index			: -1;
 
 	transform		: translate(110px, -170px);
+
+	animation-delay		: 2.5s !important;
 }
 
 /* Title */
@@ -48,6 +50,8 @@
 	font-family		: Spartan;
 	font-size		: 48px;
 	font-weight		: 900;
+
+	animation-delay		: 2.5s !important;
 }
 
 /* Underline */
@@ -56,6 +60,8 @@
 	flex-direction		: row;
 	justify-content		: center;
 	align-items		: center;
+
+	animation-delay		: 2.5s !important;
 }
 
 /* Underline Dot */
@@ -78,6 +84,8 @@
 	font-family		: Spartan;
 	font-size		: 14px;
 	text-align		: center;
+
+	animation-delay		: 4s !important;
 }
 
 /* Call to Action */
@@ -105,6 +113,8 @@
 	box-shadow		: 0 8px 25px rgba(0, 0, 0, 0.15);
 
 	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+
+	animation-delay		: 5.5s !important;
 }
 
 /* Call to Action Hover */
@@ -122,6 +132,8 @@
 	flex-direction		: column;
 	justify-content		: center;
 	align-items		: center;
+
+	animation-delay		: 5.5s !important;
 }
 
 /* Dot */

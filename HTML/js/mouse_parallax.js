@@ -1,5 +1,5 @@
 //	Declare constants
-const BACKGROUND_SPEED = 0.025;
+const BACKGROUND_SPEED = 0.01;
 const FOREGROUND_SPEED = 0.005;
 
 //	Calculate center x and y
