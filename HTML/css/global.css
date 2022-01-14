@@ -33,3 +33,49 @@ body.active {
 .preloaded .fade, .preloaded.fade {
 	opacity			: 1;
 }
+
+/* Section Title */
+section:not(.landing) .title {
+	margin-bottom		: 50px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Section Header */
+section:not(.landing) .title .header {
+	color			: var(--text-tertiary);
+
+	font-family		: Spartan;
+	font-size		: 24px;
+
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Section Header Bold */
+section:not(.landing) .title .header .bold {
+	margin			: 0;
+	margin-left		: 8px;
+
+	color			: var(--theme-primary);
+
+	font-family		: Spartan;
+	font-size		: 24px;
+	font-weight		: bold;
+}
+
+/* Section Meta */
+section:not(.landing) .title .meta {
+	margin-top		: 20px;
+
+	color			: var(--theme-secondary);
+
+	font-family		: Spartan;
+	font-size		: 14px;
+	text-align		: center;
+}
