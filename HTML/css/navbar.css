@@ -45,6 +45,8 @@
 
 /* Navbar Logo */
 .navbar .logo {
+	cursor			: default;
+
 	position		: absolute;
 	left			: 0;
 

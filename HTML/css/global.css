@@ -23,6 +23,11 @@ body.active {
 }
 
 /* Active Fade */
-.active .fade, .active.fade {
+.active:not(.preloaded) .fade, .active:not(.preloaded).fade {
 	animation		: fade_in 1s ease-in-out 0s 1 forwards;
+}
+
+/* Preloaded Fade */
+.preloaded .fade, .preloaded.fade {
+	opacity			: 1;
 }
