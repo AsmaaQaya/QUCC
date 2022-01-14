@@ -1,0 +1,141 @@
+/* Footer */
+.footer {
+	position		: relative;
+	width			: 100%;
+
+	margin-top		: 275px;
+	padding			: 30px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: flex-start;
+	align-items		: center;
+
+	background-color	: var(--theme-primary);
+}
+
+/* Divider */
+.footer .divider {
+	width			: 50px;
+	height			: 1px;
+
+	margin-top		: 60px;
+	margin-bottom		: 15px;
+
+	background-color	: var(--text-quaternary);
+}
+
+/* Prompt */
+.footer .prompt {
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Prompt Meta */
+.footer .prompt .meta {
+	margin-top		: 0px;
+	margin-bottom		: 7.5px;
+
+	color			: var(--text-quaternary);
+
+	font-family		: Spartan;
+	font-size		: 14px;
+	text-align		: center;
+}
+
+/* Prompt Link */
+.footer .prompt .link {
+	cursor			: pointer;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+
+	text-decoration		: none;
+}
+
+/* Prompt Link Text */
+.footer .prompt .link .text {
+	margin			: 0px;
+
+	color			: var(--text-quaternary);
+
+	font-family		: Spartan;
+	font-size		: 36px;
+	font-weight		: 900;
+	text-align		: center;
+
+	transition		: 0.25s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Prompt Link Underline */
+.footer .prompt .link .underline {
+	width			: 14em;
+	height			: 2px;
+
+	margin-top		: 5px;
+
+	background-color	: var(--text-quaternary);
+	border-radius		: 2px;
+
+	transform		: scaleX(0);
+
+	transition		: 0.25s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Prompt Link Hover Text */
+.footer .prompt .link:hover .text {
+	transform		: scale(105%);
+}
+
+/* Prompt Link Hover Underline */
+.footer .prompt .link:hover .underline {
+	transform		: scaleX(100%);
+}
+
+/* Footer Links */
+.footer .links {
+	margin-top		: 80px;
+	
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Footer Social Link */
+.footer .links .link {
+	margin-left		: 7.5px;
+	margin-right		: 7.5px;
+
+	text-decoration		: none;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Footer Social Link */
+.footer .links .link:hover {
+	transform		: scale(125%);
+}
+
+/* Footer Social Link Icon */
+.footer .links .link i {
+	color			: var(--text-quaternary);
+
+	font-size		: 15px;
+}
+
+/* Footer Message */
+.footer .message {
+	margin-top		: 15px;
+	margin-bottom		: 0px;
+	
+	color			: var(--text-quaternary);
+
+	font-family		: Spartan;
+	font-size		: 10px;
+	text-align		: center;
+}
