@@ -1,0 +1,102 @@
+/* Footer */
+.footer {
+	position		: relative;
+	width			: 100%;
+
+	margin-top		: 275px;
+	padding			: 30px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: flex-start;
+	align-items		: center;
+
+	background-color	: var(--theme-primary);
+}
+
+/* Divider */
+.footer .divider {
+	width			: 50px;
+	height			: 1px;
+
+	margin-top		: 60px;
+	margin-bottom		: 15px;
+
+	background-color	: var(--text-quaternary);
+}
+
+/* Prompt */
+.footer .prompt {
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Prompt Meta */
+.footer .prompt .meta {
+	margin-top		: 0px;
+	margin-bottom		: 7.5px;
+
+	color			: var(--text-quaternary);
+
+	font-family		: Spartan;
+	font-size		: 14px;
+	text-align		: center;
+}
+
+/* Prompt Link */
+.footer .prompt .link {
+	cursor			: pointer;
+
+	text-decoration		: none;
+}
+
+/* Prompt Link Text */
+.footer .prompt .link .text {
+	margin			: 0px;
+
+	color			: var(--text-quaternary);
+
+	font-family		: Spartan;
+	font-size		: 36px;
+	font-weight		: 900;
+	text-align		: center;
+}
+
+/* Footer Links */
+.footer .links {
+	margin-top		: 80px;
+	
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Footer Social Link */
+.footer .links .link {
+	margin-left		: 7.5px;
+	margin-right		: 7.5px;
+
+	text-decoration		: none;
+}
+
+/* Footer Social Link Icon */
+.footer .links .link i {
+	color			: var(--text-quaternary);
+
+	font-size		: 15px;
+}
+
+/* Footer Message */
+.footer .message {
+	margin-top		: 15px;
+	margin-bottom		: 0px;
+	
+	color			: var(--text-quaternary);
+
+	font-family		: Spartan;
+	font-size		: 10px;
+	text-align		: center;
+}
