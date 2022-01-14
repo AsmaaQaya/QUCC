@@ -49,6 +49,11 @@
 .footer .prompt .link {
 	cursor			: pointer;
 
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+
 	text-decoration		: none;
 }
 
@@ -62,6 +67,33 @@
 	font-size		: 36px;
 	font-weight		: 900;
 	text-align		: center;
+
+	transition		: 0.25s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Prompt Link Underline */
+.footer .prompt .link .underline {
+	width			: 14em;
+	height			: 2px;
+
+	margin-top		: 5px;
+
+	background-color	: var(--text-quaternary);
+	border-radius		: 2px;
+
+	transform		: scaleX(0);
+
+	transition		: 0.25s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Prompt Link Hover Text */
+.footer .prompt .link:hover .text {
+	transform		: scale(105%);
+}
+
+/* Prompt Link Hover Underline */
+.footer .prompt .link:hover .underline {
+	transform		: scaleX(100%);
 }
 
 /* Footer Links */
@@ -80,6 +112,13 @@
 	margin-right		: 7.5px;
 
 	text-decoration		: none;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Footer Social Link */
+.footer .links .link:hover {
+	transform		: scale(125%);
 }
 
 /* Footer Social Link Icon */
