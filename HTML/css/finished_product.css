@@ -1,5 +1,5 @@
 /* Finished Product */
-section:not(.landing) {
+.finished_product {
 	position		: relative;
 	width			: 100%;
 
@@ -9,4 +9,201 @@ section:not(.landing) {
 	flex-direction		: column;
 	justify-content		: flex-start;
 	align-items		: center;
+}
+
+/* List */
+.finished_product .list {
+	height			: 600px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Background */
+.finished_product .list .background {
+	position		: absolute;
+
+	z-index			: -1;
+}
+
+/* Table Container */
+.finished_product .list .container {
+	width			: 1000px;
+	height			: 520px;
+
+	padding-left		: 25px;
+	padding-right		: 25px;
+	padding-bottom		: 25px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: space-between;
+	align-items		: center;
+
+	background-color	: var(--background-primary);
+	border-radius		: 10px;
+
+	box-shadow		: 0 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Table */
+.finished_product .list .table {
+	width			: 100%;
+
+	border-collapse		: collapse;
+}
+
+/* Table Head */
+.finished_product .list .table .head {
+	height			: 60px;
+
+	border-bottom		: 1px solid var(--background-tertiary);
+}
+
+/* Column */
+.finished_product .list .table .head th {
+	color			: var(--text-primary);
+
+	font-family		: Spartan;
+	font-size		: 14px;
+	font-weight		: bold;
+	text-align		: left;
+}
+
+/* Small Column */
+.finished_product .list .table .head .small {
+	width			: 160px;
+}
+
+/* Tiny Column */
+.finished_product .list .table .head .tiny {
+	width			: 40px;
+}
+
+/* Add Row */
+.finished_product .list .add_row {
+	cursor			: pointer;
+
+	width			: 1000px;
+	height			: 40px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	color			: var(--text-secondary);
+	background-color	: transparent;
+	background-image	: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23AAAAAAFF' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+	border			: none;
+	border-radius		: 10px;
+
+	font-family		: Spartan;
+	font-size		: 12px;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Add Row Hover */
+.finished_product .list .add_row:hover {
+	background-color	: var(--background-secondary);
+}
+
+/* Row */
+.finished_product .list .table .row {
+	height			: 60px;
+}
+
+/* Row Column */
+.finished_product .list .table .row td {
+	color			: var(--text-secondary);
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Table Checkbox */
+.finished_product .list .table .checkbox {
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: flex-start;
+	align-items		: center;
+}
+
+/* Table Checkbox Label */
+.finished_product .list .table .checkbox label {
+	cursor			: pointer;
+
+	width			: 15px;
+	height			: 15px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	background-color	: var(--background-primary);
+	border			: 1px solid var(--text-tertiary);
+	border-radius		: 5px;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Table Checkbox Label Hover */
+.finished_product .list .table .checkbox label:hover {
+	background-color	: var(--background-tertiary);
+}
+
+/* Table Checkbox Checkmark */
+.finished_product .list .table .checkbox i {
+	position		: absolute;
+
+	color			: var(--text-secondary);
+
+	opacity			: 0;
+
+	font-size		: 12px;
+
+	transition		: 0.05s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Table Checkbox Input */
+.finished_product .list .table .checkbox input {
+	width			: 0;
+	height			: 0;
+
+	margin			: 0;
+
+	visibility		: hidden;
+}
+
+/* Table Checkbox Input Checked */
+.finished_product .list .table .checkbox input:checked ~ i {
+	opacity			: 1;
+}
+
+/* Table Button */
+.finished_product .list .table .button {
+	cursor			: pointer;
+
+	width			: 30px;
+	height			: 30px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	color			: var(--text-secondary);
+	border-radius		: 15px;
+
+	font-size		: 15px;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Table Button Hover */
+.finished_product .list .table .button:hover {
+	background-color	: var(--background-tertiary);
 }
