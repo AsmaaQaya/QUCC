@@ -24,6 +24,7 @@
 		<!-- Import Scripts -->
 		<script src='js/scroll.js'></script>
 		<script src='js/mouse_parallax.js'></script>
+		<script src='js/table.js'></script>
 
 	</head>
 
@@ -150,8 +151,8 @@
 			<!-- List -->
 			<div class='list'>
 
-				<!-- Table Container -->
-				<div class='container'>
+				<!-- Background -->
+				<div class='background'>
 
 					<!-- Table -->
 					<table class='table'>
@@ -168,7 +169,7 @@
 							</th>
 
 							<!-- Task -->
-							<th>Task</th>
+							<th class='big'>Task</th>
 
 							<!-- Deadline -->
 							<th class='small'>Deadline</th>
@@ -188,7 +189,7 @@
 							<tr class='row'>
 
 								<!-- Select -->
-								<td>
+								<td class='tiny'>
 									
 									<!-- Checkbox -->
 									<div class='checkbox'><label><input type='checkbox'/><i class='fa fa-check'></i></label></div>
@@ -196,16 +197,16 @@
 								</td>
 		
 								<!-- Task -->
-								<td>Go to the gym</td>
+								<td class='big'>Go to the gym</td>
 		
 								<!-- Deadline -->
-								<td>19/01/2022</td>
+								<td class='small'>19/01/2022</td>
 
 								<!-- Priority -->
-								<td>High</td>
+								<td class='small'>High</td>
 		
 								<!-- Action -->
-								<td><i class='button fa fa-ellipsis-v'></i></td>
+								<td class='tiny'><i class='button fa fa-ellipsis-v'></i></td>
 		
 							</tr>
 
@@ -214,12 +215,12 @@
 					</table>
 
 					<!-- Add Row -->
-					<button class='add_row'>Add a new task</button>
+					<button class='add_row' onclick='AddTableEntry()'>Add a new task</button>
 
 				</div>
 
-				<!-- Background -->
-				<img class='background' src='images/Finished_Product_Section_Background.svg'/>
+				<!-- Pattern -->
+				<img class='pattern' src='images/Finished_Product_Section_Background.svg'/>
 
 			</div>
 
