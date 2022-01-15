@@ -11,6 +11,7 @@
 		<!-- Import FontAwesome -->
 		<script src="https://kit.fontawesome.com/cf778d1443.js" crossorigin="anonymous"></script>
 
+
 		<!-- Import Stylesheets -->
 		<link rel='stylesheet' type='text/css' href='css/colors.css'/>
 		<link rel='stylesheet' type='text/css' href='css/animations.css'/>
@@ -18,6 +19,7 @@
 		<link rel='stylesheet' type='text/css' href='css/navbar.css'/>
 		<link rel='stylesheet' type='text/css' href='css/landing.css'/>
 		<link rel='stylesheet' type='text/css' href='css/footer.css'/>
+		<link rel='stylesheet' type='text/css' href='css/card.css'/>
 		
 
 		<!-- Import Scripts -->
@@ -27,7 +29,7 @@
 	</head>
 
 	<!-- Body -->
-	<body>
+	<body id="landing">
 
 		<!-- Navbar -->
 		<header class='navbar fade'>
@@ -39,7 +41,7 @@
 			<h1 class='logo'>QUCC</h1>
 
 			<!-- Links -->
-			<a class='active link'>
+			<a class='active link' href="#landing">
 
 				<!-- Text -->
 				<p class='text'>LANDING</p>
@@ -49,7 +51,7 @@
 
 			</a>
 			<span class='seperator'></span>
-			<a class='link'>
+			<a class='link' href="#events">
 
 				<!-- Text -->
 				<p class='text'>EVENTS</p>
@@ -59,7 +61,7 @@
 
 			</a>
 			<span class='seperator'></span>
-			<a class='link'>
+			<a class='link' href="elements">
 
 				<!-- Text -->
 				<p class='text'>ELEMENTS</p>
@@ -127,6 +129,138 @@
 
 			</div>
 
+		</section>
+
+		<!-- Events -->
+		<section id="events">
+
+			<!-- Background Pattern -->
+			<!-- <img class='background fade' src='images/Landing_Section_Background.svg'/> -->
+
+			<!-- Header -->
+			<div style="text-align: center; margin-top: 30%;">
+				<h1>Our Events</h1>
+				<p>View a list of out events and additional info about them.</p>
+			</div>
+
+			<!-- Cards -->
+			<div>
+				<div class="card">
+					<div class="card-content">
+						<img src="images/html.jpg" class="card-img" alt="html picture">
+						<div class="card-date">
+							<div class="card-icons">
+								<i class="fas fa-calendar-day"></i><br>
+								<i class="fas fa-clock"></i><br>
+								<i class="fas fa-map-marker-alt"></i>
+							</div>
+							<div>
+								<p class="icon-text">
+									24th January 2022
+								</p>
+								<p class="icon-text">
+									12:30pm - 2:00pm
+								</p>
+								<p class="icon-text">
+									Online 
+								</p>
+							</div>
+						</div>
+						<div class="card-body">
+							<hr class="card-separator">
+							<hr>
+							<div class="card-body-info">
+								<h1 class="card-title">CSS & HTML: BASICS OF WEB DESIGN</h1>
+							    <p class="card-text">In this event, students will learn about the basics of html and css to create a basic website.</p>
+					    	</div>
+						    <a href="../Templates/Day 1/" download="index.html" class="card-button">Download template</a>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-content">
+						<img src="images/css.jpg" class="card-img" alt="css picture">
+						<div class="card-date">
+							<div class="card-icons">
+								<i class="fas fa-calendar-day"></i><br>
+								<i class="fas fa-clock"></i><br>
+								<i class="fas fa-map-marker-alt"></i>
+							</div>
+							<div>
+								<p class="icon-text">
+									26th January 2022
+								</p>
+								<p class="icon-text">
+									12:30pm - 2:00pm
+								</p>
+								<p class="icon-text">
+									Online 
+								</p>
+							</div>
+						</div>
+						<div class="card-body">
+							<hr class="card-separator">
+							<hr>
+							<div class="card-body-info">
+								<h1 class="card-title">WEBSTYLING WITH CSS</h1>
+							    <p class="card-text">In this event, students will learn about the different tools available to them for styling their webpages.</p>
+						   	</div>
+						    <a href="../Templates/Day 2/" download="filename" class="card-button">Download template</a>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-content">
+						<img src="images/js.jpg" class="card-img" alt="javascript picture">
+						<div class="card-date">
+							<div class="card-icons">
+								<i class="fas fa-calendar-day"></i><br>
+								<i class="fas fa-clock"></i><br>
+								<i class="fas fa-map-marker-alt"></i>
+							</div>
+							<div>
+								<p class="icon-text">
+									31st January 2022
+								</p>
+								<p class="icon-text">
+									12:30pm - 2:00pm
+								</p>
+								<p class="icon-text">
+									Online 
+								</p>
+							</div>
+						</div>
+						<div class="card-body">
+							<hr class="card-separator">
+							<hr>
+							<div class="card-body-info">
+								<h1 class="card-title">CREATING INTERACTIVE WEBSITES</h1>
+							    <p class="card-text">In this event, students will learn about javascript to create an interactive website.</p>  
+						    </div>
+						    <a href="../Templates/Day 3/" download="filename" class="card-button">Download template</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+
+		<!-- Element -->
+		<section id="elements">
+
+			<!-- Background Pattern -->
+			<!-- <img class='background fade' src='images/Landing_Section_Background.svg'/> -->
+
+			<!-- Header -->
+			<div>
+				<h1>Elements Used</h1>
+				<p>Look through a gallery of the elements used unb the workshop and study them one by one.</p>
+			</div>
+
+			<!-- Elements picture -->
+			<div>
+				<!-- Imagies here -->
+			</div>
 		</section>
 			
 		<!-- Footer -->
