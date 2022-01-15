@@ -19,6 +19,11 @@ body.active {
 	overflow-y		: visible;
 }
 
+/* Remove Form Outline */
+input:focus, select:focus, button:focus {
+	outline			: none;
+}
+
 /* Inactive Fade */
 .fade {
 	opacity			: 0;

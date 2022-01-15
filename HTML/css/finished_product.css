@@ -102,7 +102,7 @@
 
 	color			: var(--text-secondary);
 	background-color	: transparent;
-	background-image	: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23AAAAAAFF' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+	background-image	: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23DDDDDDFF' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
 	border			: none;
 	border-radius		: 10px;
 
@@ -135,6 +135,50 @@
 /* Row Column */
 .finished_product .list .table .row td {
 	color			: var(--text-secondary);
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Table Input */
+.finished_product .list .table .row td input {
+	width			: calc(100% - 5px - 2em);
+	height			: 36px;
+
+	padding			: 0 1em;
+
+	color			: var(--text-primary);
+	border			: 1px solid var(--border-primary);
+	border-radius		: 5px;
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Table Input Placeholder */
+.finished_product .list .table .row td input::placeholder {
+	color			: var(--text-tertiary);
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Table Dropdown */
+.finished_product .list .table .row td select {
+	width			: calc(100% - 5px);
+	height			: 36px;
+
+	padding			: 0 1em;
+
+	color			: var(--text-primary);
+	border			: 1px solid var(--border-primary);
+	border-radius		: 5px;
 
 	font-family		: Spartan;
 	font-size		: 12px;
@@ -218,6 +262,16 @@
 	font-size		: 15px;
 
 	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Positive Button */
+.finished_product .list .table .positive.button {
+	color			: var(--theme-positive);
+}
+
+/* Negative Button */
+.finished_product .list .table .negative.button {
+	color			: var(--theme-negative);
 }
 
 /* Table Button Hover */
