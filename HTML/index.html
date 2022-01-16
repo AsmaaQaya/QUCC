@@ -18,6 +18,7 @@
 		<link rel='stylesheet' type='text/css' href='css/global.css'/>
 		<link rel='stylesheet' type='text/css' href='css/navbar.css'/>
 		<link rel='stylesheet' type='text/css' href='css/landing.css'/>
+		<link rel='stylesheet' type='text/css' href='css/finished_product.css'/>
 		<link rel='stylesheet' type='text/css' href='css/footer.css'/>
 		<link rel='stylesheet' type='text/css' href='css/card.css'/>
 		
@@ -25,6 +26,7 @@
 		<!-- Import Scripts -->
 		<script src='js/scroll.js'></script>
 		<script src='js/mouse_parallax.js'></script>
+		<script src='js/table.js'></script>
 
 	</head>
 
@@ -244,23 +246,68 @@
 			</div>
 			
 		</section>
+		
+		<!-- Finished Product Section -->
+		<section class='finished_product'>
 
-		<!-- Element -->
-		<section id="elements">
+			<!-- Title -->
+			<div class='title'>
 
-			<!-- Background Pattern -->
-			<!-- <img class='background fade' src='images/Landing_Section_Background.svg'/> -->
+				<!-- Header -->
+				<div class='header fade'>The <h1 class='bold'>Finished Product</h1></div>
 
-			<!-- Header -->
-			<div>
-				<h1>Elements Used</h1>
-				<p>Look through a gallery of the elements used unb the workshop and study them one by one.</p>
+				<!-- Meta -->
+				<p class='meta fade'>
+					By the end of these three events, you should get something <br/>
+					similar to this.
+				</p>
+
 			</div>
 
-			<!-- Elements picture -->
-			<div>
-				<!-- Imagies here -->
+			<!-- List -->
+			<div class='list'>
+
+				<!-- Background -->
+				<div class='background fade'>
+
+					<!-- Table -->
+					<table class='table'>
+
+						<!-- Head -->
+						<thead><tr class='head'>
+
+							<!-- Select -->
+							<th class='tiny'></th>
+
+							<!-- Task -->
+							<th class='big'>Task</th>
+
+							<!-- Deadline -->
+							<th class='small'>Deadline</th>
+
+							<!-- Priority -->
+							<th class='small'>Priority</th>
+
+							<!-- Action -->
+							<th class='tiny actions'></th>
+
+						</tr></thead>
+
+						<!-- Rows -->
+						<tbody class='rows'></tbody>
+
+					</table>
+
+					<!-- Add Row -->
+					<button class='add_row' onclick='ClickAddEntry()'>Add a new task</button>
+
+				</div>
+
+				<!-- Pattern -->
+				<img class='pattern fade' src='images/Finished_Product_Section_Background.svg'/>
+
 			</div>
+
 		</section>
 			
 		<!-- Footer -->
