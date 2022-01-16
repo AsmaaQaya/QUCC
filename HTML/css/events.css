@@ -40,6 +40,8 @@
 	position		: absolute;
 
 	z-index			: -1;
+
+	animation-delay		: 4s !important;
 }
 
 /* Card */
@@ -54,7 +56,19 @@
 	justify-content		: center;
 	align-items		: center;
 
+	transform		: rotateY(-90deg);
+
 	transition		: 0.5s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Active Card */
+.active:not(.preloaded).events .cards .card {
+	animation		: card_flip 0.5s ease-in-out 4s 1 forwards;
+}
+
+/* Preloaded Card */
+.preloaded.events .cards .card {
+	transform		: rotateY(0deg);
 }
 
 /* Front */

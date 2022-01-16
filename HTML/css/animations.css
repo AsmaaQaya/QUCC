@@ -8,6 +8,16 @@
 	}
 }
 
+/* Card Flip */
+@keyframes card_flip {
+	from {
+		transform		: rotateY(-90deg);
+	}
+	to {
+		transform		: rotateY(0deg);
+	}
+}
+
 /* Landing Page Dot Pulse */
 @keyframes dot_pulse {
 	0% {

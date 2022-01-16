@@ -24,9 +24,18 @@ let LoadState = () => {
 			body.classList.add('unlocked');
 
 		}
+		else if (i == 1) {
+
+			//	Get events section and navbar
+			let section = document.querySelector('.events');
+
+			//	Set section to active
+			section.classList.add('active', 'preloaded');
+
+		}
 		else if (i == 3) {
 
-			//	Get landing section and navbar
+			//	Get finished product section and navbar
 			let section = document.querySelector('.finished_product');
 
 			//	Set section to active
@@ -92,19 +101,44 @@ let CheckLanding = () => {
 
 }
 
+//	Function called to check if events section should be visible
+let CheckEvents = () => {
+
+	//	Get current scroll position
+	let scrollY = window.scrollY;
+
+	//	Get events section
+	let section = document.querySelector('.events');
+
+	//	Check if past events section and not already visible
+	if (scrollY >= section.getBoundingClientRect().top && activeIndex < 1) {
+
+		//	Set section to active
+		section.classList.add('active');
+
+		//	Update active index
+		activeIndex = 1;
+
+		//	Save to session storage
+		sessionStorage.setItem('activeIndex', activeIndex);
+
+	}
+
+}
+
 //	Function called to check if finished product section should be visible
 let CheckFinishedProduct = () => {
 
 	//	Get current scroll position
 	let scrollY = window.scrollY;
 
-	//	Get landing section and navbar
+	//	Get finished product section
 	let section = document.querySelector('.finished_product');
 
-	//	Check if past landing section and not already visible
+	//	Check if past finished product section and not already visible
 	if (scrollY >= section.getBoundingClientRect().top && activeIndex < 3) {
 
-		//	Set section, body and navbar to active
+		//	Set section to active
 		section.classList.add('active');
 
 		//	Update active index
@@ -119,6 +153,7 @@ let CheckFinishedProduct = () => {
 
 //	Subscribe to event listeners
 document.addEventListener('scroll', UpdateHeader);
+document.addEventListener('scroll', CheckEvents);
 document.addEventListener('scroll', CheckFinishedProduct);
 document.addEventListener('DOMContentLoaded', LoadState);
 document.addEventListener('DOMContentLoaded', CheckLanding);
