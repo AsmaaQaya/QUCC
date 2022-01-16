@@ -4,9 +4,6 @@ let count = 0;
 //	List of entries
 let entries = [];
 
-//	List of selected entries
-let selected = [];
-
 //	Function called when add new task button is clicked
 let AddTableEntry = ({ title, deadline, priority }) => {
 
@@ -25,9 +22,7 @@ let AddTableEntry = ({ title, deadline, priority }) => {
 
 	//	Generate row html
 	let html = `
-		<td class='tiny'>
-			<div class='checkbox'><label><input type='checkbox'/><i class='fa fa-check'></i></label></div>
-		</td>
+		<td class='tiny'></td>
 		<td class='big'>${title}</td>
 		<td class='small'>${deadline}</td>
 		<td class='small'>${priority}</td>
@@ -81,9 +76,6 @@ let RemoveTableEntry = (index) => {
 
 //	Function called when the actions button is clicked
 let ClickActionsButton = (index) => {
-
-	//	If clicking on table menu button but there are no entries selected
-	if (index === -1 && selected.length === 0) return;
 
 	//	Find actions button
 	let button = document.getElementById(`actions_${index}`);
