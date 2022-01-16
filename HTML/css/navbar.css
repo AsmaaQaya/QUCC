@@ -116,3 +116,6 @@
 	background-color	: var(--text-secondary);
 	border-radius		: 2px;
 }
+a{
+	text-decoration-line: none;
+}

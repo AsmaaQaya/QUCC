@@ -3,7 +3,7 @@ body
 font-family: helvetica, verdana, sans-serif;
 background-color: #2EFEF7;
 min-width: 1000px;
-max-width: 1350px;
+/*max-width: 1350px;*/
 border:solid;
 border-color:blue;
 border-width:5px;

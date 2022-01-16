@@ -9,7 +9,8 @@
 		<title>Explore WebDev</title>
 
 		<!-- Import FontAwesome -->
-		<script src="https://kit.fontawesome.com/cf778d1443.js" crossorigin="anonymous"></script>
+		<script src='https://kit.fontawesome.com/cf778d1443.js' crossorigin='anonymous'></script>
+
 
 		<!-- Import Stylesheets -->
 		<link rel='stylesheet' type='text/css' href='css/colors.css'/>
@@ -17,6 +18,7 @@
 		<link rel='stylesheet' type='text/css' href='css/global.css'/>
 		<link rel='stylesheet' type='text/css' href='css/navbar.css'/>
 		<link rel='stylesheet' type='text/css' href='css/landing.css'/>
+		<link rel='stylesheet' type='text/css' href='css/events.css'/>
 		<link rel='stylesheet' type='text/css' href='css/finished_product.css'/>
 		<link rel='stylesheet' type='text/css' href='css/footer.css'/>
 		
@@ -24,6 +26,7 @@
 		<!-- Import Scripts -->
 		<script src='js/scroll.js'></script>
 		<script src='js/mouse_parallax.js'></script>
+		<script src='js/events.js'></script>
 		<script src='js/table.js'></script>
 
 	</head>
@@ -41,7 +44,7 @@
 			<h1 class='logo'>QUCC</h1>
 
 			<!-- Links -->
-			<a class='active link'>
+			<a class='active link' href='#landing'>
 
 				<!-- Text -->
 				<p class='text'>LANDING</p>
@@ -51,7 +54,7 @@
 
 			</a>
 			<span class='seperator'></span>
-			<a class='link'>
+			<a class='link' href='#events'>
 
 				<!-- Text -->
 				<p class='text'>EVENTS</p>
@@ -61,7 +64,7 @@
 
 			</a>
 			<span class='seperator'></span>
-			<a class='link'>
+			<a class='link' href='elements'>
 
 				<!-- Text -->
 				<p class='text'>ELEMENTS</p>
@@ -129,6 +132,311 @@
 
 			</div>
 
+		</section>
+
+		<!-- Events -->
+		<section class='events'>
+
+			<!-- Background -->
+			<div class='background'></div>
+
+			<!-- Title -->
+			<div class='title'>
+
+				<!-- Header -->
+				<div class='header fade'>Our <h1 class='bold'>Events</h1></div>
+
+				<!-- Meta -->
+				<p class='meta fade'>
+					View a list of our events and additional info about them. 
+				</p>
+
+			</div>
+
+			<!-- Cards -->
+			<div class='cards'>
+
+				<!-- Pattern -->
+				<img class='pattern fade' src='images/Events_Section_Background.svg'/>
+
+				<!-- Event One -->
+				<div class='card' style='animation-delay: 3s' id='card_0'>
+
+					<!-- Front -->
+					<div class='front'>
+						
+						<!-- Underline -->
+						<div class='underline'></div>
+
+						<!-- Header -->
+						<h1 class='header'>
+							CSS & HTML: BASICS OF <br/>
+							WEB DESIGN
+						</h1>
+
+						<!-- Details -->
+						<div class='details'>
+
+							<!-- Icons -->
+							<div class='icons'>
+								<i class='fas fa-calendar-day'></i>
+								<i class='fas fa-clock'></i>
+								<i class='fas fa-map-marker-alt'></i>
+							</div>
+
+							<!-- Text -->
+							<div class='text'>
+								<p>24 Jan 2022</p>
+								<p>12:30 - 14:00</p>
+								<p>Online (WebEx)</p>
+							</div>
+
+						</div>
+
+						<!-- Call To Action -->
+						<button class='call_to_action' onclick='FlipCard(0)'>Learn More</button>
+
+					</div>
+
+					<!-- Back -->
+					<div class='back'>
+
+						<!-- Close Button -->
+						<button class='close' onclick='FlipCard(0)'><i class='fa fa-times'></i></button>
+
+						<!-- Image -->
+						<img class='logo' src='images/HTML_Logo.webp'/>
+
+						<!-- Details -->
+						<div class='details'>
+
+							<!-- Icons -->
+							<div class='icons'>
+								<i class='fas fa-calendar-day'></i>
+								<i class='fas fa-clock'></i>
+								<i class='fas fa-map-marker-alt'></i>
+							</div>
+
+							<!-- Text -->
+							<div class='text'>
+								<p>24 Jan 2022</p>
+								<p>12:30 - 14:00</p>
+								<p>Online (WebEx)</p>
+							</div>
+
+						</div>
+
+						<!-- Divider -->
+						<div class='divider'></div>
+
+						<!-- Underline -->
+						<div class='underline'></div>
+
+						<!-- Header -->
+						<h1 class='header'>
+							CSS & HTML: BASICS OF <br/>
+							WEB DESIGN
+						</h1>
+
+						<!-- Description -->
+						<p class='description'>
+							In this event, participants will <br/>
+							learn about the different elements <br/>
+							available in HTML
+						</p>
+
+						<!-- Call To Action -->
+						<a class='call_to_action' href='https://github.com/AsmaaQaya/QUCC/tree/main/Templates/Day%201' target='_blank'>Download Template</a>
+
+					</div>
+
+				</div>
+
+				<!-- Event Two -->
+				<div class='flipped card' style='animation-delay: 3.25s' id='card_1'>
+
+					<!-- Front -->
+					<div class='front'>
+						
+						<!-- Underline -->
+						<div class='underline'></div>
+
+						<!-- Header -->
+						<h1 class='header'>
+							WEBSTYLING WITH CSS
+						</h1>
+
+						<!-- Details -->
+						<div class='details'>
+
+							<!-- Icons -->
+							<div class='icons'>
+								<i class='fas fa-calendar-day'></i>
+								<i class='fas fa-clock'></i>
+								<i class='fas fa-map-marker-alt'></i>
+							</div>
+
+							<!-- Text -->
+							<div class='text'>
+								<p>26 Jan 2022</p>
+								<p>12:30 - 14:00</p>
+								<p>Online (WebEx)</p>
+							</div>
+
+						</div>
+
+						<!-- Call To Action -->
+						<button class='call_to_action' onclick='FlipCard(1)'>Learn More</button>
+
+					</div>
+
+					<!-- Back -->
+					<div class='back'>
+
+						<!-- Close Button -->
+						<button class='close' onclick='FlipCard(1)'><i class='fa fa-times'></i></button>
+
+						<!-- Image -->
+						<img class='logo' src='images/CSS_Logo.webp'/>
+
+						<!-- Details -->
+						<div class='details'>
+
+							<!-- Icons -->
+							<div class='icons'>
+								<i class='fas fa-calendar-day'></i>
+								<i class='fas fa-clock'></i>
+								<i class='fas fa-map-marker-alt'></i>
+							</div>
+
+							<!-- Text -->
+							<div class='text'>
+								<p>26 Jan 2022</p>
+								<p>12:30 - 14:00</p>
+								<p>Online (WebEx)</p>
+							</div>
+
+						</div>
+
+						<!-- Divider -->
+						<div class='divider'></div>
+
+						<!-- Underline -->
+						<div class='underline'></div>
+
+						<!-- Header -->
+						<h1 class='header'>
+							WEBSTYLING WITH CSS
+						</h1>
+
+						<!-- Description -->
+						<p class='description'>
+							In this event, students will learn <br/>
+							about the different tools available <br/>
+							to them for styling their webpages
+						</p>
+
+						<!-- Call To Action -->
+						<a class='call_to_action' href='https://github.com/AsmaaQaya/QUCC/tree/main/Templates/Day%202' target='_blank'>Download Template</a>
+
+					</div>
+
+				</div>
+
+				<!-- Event Three -->
+				<div class='card' style='animation-delay: 3.5s' id='card_2'>
+
+					<!-- Front -->
+					<div class='front'>
+						
+						<!-- Underline -->
+						<div class='underline'></div>
+
+						<!-- Header -->
+						<h1 class='header'>
+							CREATING INTERACTIVE <br/>
+							WEBSITES
+						</h1>
+
+						<!-- Details -->
+						<div class='details'>
+
+							<!-- Icons -->
+							<div class='icons'>
+								<i class='fas fa-calendar-day'></i>
+								<i class='fas fa-clock'></i>
+								<i class='fas fa-map-marker-alt'></i>
+							</div>
+
+							<!-- Text -->
+							<div class='text'>
+								<p>31 Jan 2022</p>
+								<p>12:30 - 14:00</p>
+								<p>Online (WebEx)</p>
+							</div>
+
+						</div>
+
+						<!-- Call To Action -->
+						<button class='call_to_action' onclick='FlipCard(2)'>Learn More</button>
+
+					</div>
+
+					<!-- Back -->
+					<div class='back'>
+
+						<!-- Close Button -->
+						<button class='close' onclick='FlipCard(2)'><i class='fa fa-times'></i></button>
+
+						<!-- Image -->
+						<img class='logo' src='images/JS_Logo.webp'/>
+
+						<!-- Details -->
+						<div class='details'>
+
+							<!-- Icons -->
+							<div class='icons'>
+								<i class='fas fa-calendar-day'></i>
+								<i class='fas fa-clock'></i>
+								<i class='fas fa-map-marker-alt'></i>
+							</div>
+
+							<!-- Text -->
+							<div class='text'>
+								<p>31 Jan 2022</p>
+								<p>12:30 - 14:00</p>
+								<p>Online (WebEx)</p>
+							</div>
+
+						</div>
+
+						<!-- Divider -->
+						<div class='divider'></div>
+
+						<!-- Underline -->
+						<div class='underline'></div>
+
+						<!-- Header -->
+						<h1 class='header'>
+							CREATING INTERACTIVE <br/>
+							WEBSITES
+						</h1>
+
+						<!-- Description -->
+						<p class='description'>
+							In the final event, students will <br/>
+							use JavaScript to bring functionality <br/>
+							to their to-do list website
+						</p>
+
+						<!-- Call To Action -->
+						<a class='call_to_action' href='https://github.com/AsmaaQaya/QUCC/tree/main/Templates/Day%203' target='_blank'>Download Template</a>
+
+					</div>
+
+				</div>
+			</div>
+			
 		</section>
 
 		<!-- Finished Product Section -->
