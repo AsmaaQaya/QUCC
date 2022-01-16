@@ -1,7 +1,3 @@
-//	Declare constants
-const NAVBAR_THRESHOLD = 30;
-const LANDING_THRESHOLD = 0;
-
 //	Active index
 let activeIndex = -1;
 
@@ -25,7 +21,16 @@ let LoadState = () => {
 			//	Set section, body and navbar to active
 			section.classList.add('active', 'preloaded');
 			navbar.classList.add('active', 'preloaded');
-			body.classList.add('active', 'preloaded');
+			body.classList.add('unlocked');
+
+		}
+		else if (i == 3) {
+
+			//	Get landing section and navbar
+			let section = document.querySelector('.finished_product');
+
+			//	Set section to active
+			section.classList.add('active', 'preloaded');
 
 		}
 
@@ -43,7 +48,7 @@ let UpdateHeader = () => {
 	let navbar = document.querySelector('.navbar');
 
 	//	If scrolled past navbar threshold
-	if (scrollY > NAVBAR_THRESHOLD) {
+	if (scrollY > 30) {
 
 		//	Turn navbar to fixed position
 		navbar.classList.add('fixed');
@@ -70,12 +75,12 @@ let CheckLanding = () => {
 	let body = document.querySelector('body');
 
 	//	Check if past landing section and not already visible
-	if (scrollY >= LANDING_THRESHOLD && activeIndex < 0) {
+	if (scrollY >= 0 && activeIndex < 0) {
 
 		//	Set section, body and navbar to active
 		section.classList.add('active');
 		navbar.classList.add('active');
-		setTimeout(() => body.classList.add('active'), 5500);
+		setTimeout(() => body.classList.add('unlocked'), 5500);
 
 		//	Update active index
 		activeIndex = 0;
@@ -87,7 +92,33 @@ let CheckLanding = () => {
 
 }
 
+//	Function called to check if finished product section should be visible
+let CheckFinishedProduct = () => {
+
+	//	Get current scroll position
+	let scrollY = window.scrollY;
+
+	//	Get landing section and navbar
+	let section = document.querySelector('.finished_product');
+
+	//	Check if past landing section and not already visible
+	if (scrollY >= section.getBoundingClientRect().top && activeIndex < 3) {
+
+		//	Set section, body and navbar to active
+		section.classList.add('active');
+
+		//	Update active index
+		activeIndex = 3;
+
+		//	Save to session storage
+		sessionStorage.setItem('activeIndex', activeIndex);
+
+	}
+
+}
+
 //	Subscribe to event listeners
 document.addEventListener('scroll', UpdateHeader);
+document.addEventListener('scroll', CheckFinishedProduct);
 document.addEventListener('DOMContentLoaded', LoadState);
 document.addEventListener('DOMContentLoaded', CheckLanding);

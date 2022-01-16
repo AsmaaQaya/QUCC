@@ -1,0 +1,355 @@
+/* Finished Product */
+.finished_product {
+	position		: relative;
+	width			: 100%;
+
+	margin-top		: 100px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: flex-start;
+	align-items		: center;
+}
+
+/* List */
+.finished_product .list {
+	height			: 600px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Pattern */
+.finished_product .list .pattern {
+	position		: absolute;
+
+	z-index			: -1;
+
+	animation-delay		: 3.5s !important;
+}
+
+/* Table Background */
+.finished_product .list .background {
+	width			: 1000px;
+	height			: 520px;
+
+	padding-left		: 25px;
+	padding-right		: 25px;
+	padding-bottom		: 25px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: space-between;
+	align-items		: center;
+
+	background-color	: var(--background-primary);
+	border-radius		: 10px;
+
+	box-shadow		: 0 4px 25px rgba(0, 0, 0, 0.15);
+
+	animation-delay		: 2.5s !important;
+}
+
+/* Table */
+.finished_product .list .table {
+	border-collapse		: collapse;
+}
+
+/* Table Head */
+.finished_product .list .table .head {
+	width			: 1000px;
+	height			: 60px;
+
+	display			: flex;
+	align-items		: center;
+
+	border-bottom		: 1px solid var(--background-tertiary);
+}
+
+/* Column */
+.finished_product .list .table .head th {
+	color			: var(--text-primary);
+
+	font-family		: Spartan;
+	font-size		: 14px;
+	font-weight		: bold;
+	text-align		: left;
+}
+
+/* Small Column */
+.finished_product .list .table .big {
+	width			: 600px;
+}
+
+/* Small Column */
+.finished_product .list .table .small {
+	width			: 160px;
+}
+
+/* Tiny Column */
+.finished_product .list .table .tiny {
+	width			: 40px;
+}
+
+/* Add Row */
+.finished_product .list .add_row {
+	cursor			: pointer;
+
+	width			: 1000px;
+	height			: 40px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	color			: var(--text-secondary);
+	background-color	: transparent;
+	background-image	: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23DDDDDDFF' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+	border			: none;
+	border-radius		: 10px;
+
+	font-family		: Spartan;
+	font-size		: 12px;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Add Row Hover */
+.finished_product .list .add_row:hover {
+	background-color	: var(--background-secondary);
+}
+
+/* Add Entry */
+.finished_product .list .table .rows #add_entry {
+	opacity			: 0;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Add Entry Active */
+.finished_product .list .table .rows .active#add_entry {
+	opacity			: 1;
+}
+
+/* Table Body */
+.finished_product .list .table .rows {
+	width			: 1000px;
+	height			: 400px;
+
+	display			: block;
+
+	overflow-y		: auto;
+}
+
+/* Row */
+.finished_product .list .table .row {
+	height			: 50px;
+
+	opacity			: 0;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Active Row */
+.finished_product .list .table .active.row {
+	opacity			: 1;
+}
+
+/* Completed Row */
+.finished_product .list .table .complete.row {
+	transform		: translateX(-250px);
+}
+
+/* Row Column */
+.finished_product .list .table .row td {
+	color			: var(--text-secondary);
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Table Input */
+.finished_product .list .table .row td input {
+	width			: calc(100% - 5px - 2em);
+	height			: 36px;
+
+	padding			: 0 1em;
+
+	color			: var(--text-primary);
+	border			: 1px solid var(--border-primary);
+	border-radius		: 5px;
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Table Input Placeholder */
+.finished_product .list .table .row td input::placeholder {
+	color			: var(--text-tertiary);
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Table Dropdown */
+.finished_product .list .table .row td select {
+	width			: calc(100% - 5px);
+	height			: 36px;
+
+	padding			: 0 1em;
+
+	color			: var(--text-primary);
+	border			: 1px solid var(--border-primary);
+	border-radius		: 5px;
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Table Checkbox */
+.finished_product .list .table .checkbox {
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: flex-start;
+	align-items		: center;
+}
+
+/* Table Checkbox Label */
+.finished_product .list .table .checkbox label {
+	cursor			: pointer;
+
+	width			: 15px;
+	height			: 15px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	background-color	: var(--background-primary);
+	border			: 1px solid var(--text-tertiary);
+	border-radius		: 5px;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Table Checkbox Label Hover */
+.finished_product .list .table .checkbox label:hover {
+	background-color	: var(--background-tertiary);
+}
+
+/* Table Checkbox Checkmark */
+.finished_product .list .table .checkbox i {
+	position		: absolute;
+
+	color			: var(--text-secondary);
+
+	opacity			: 0;
+
+	font-size		: 12px;
+
+	transition		: 0.05s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Table Checkbox Input */
+.finished_product .list .table .checkbox input {
+	width			: 0;
+	height			: 0;
+
+	margin			: 0;
+
+	visibility		: hidden;
+}
+
+/* Table Checkbox Input Checked */
+.finished_product .list .table .checkbox input:checked ~ i {
+	opacity			: 1;
+}
+
+/* Table Button */
+.finished_product .list .table .button {
+	cursor			: pointer;
+
+	width			: 30px;
+	height			: 30px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	color			: var(--text-secondary);
+	border-radius		: 15px;
+
+	font-size		: 15px;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Positive Button */
+.finished_product .list .table .positive.button {
+	color			: var(--theme-positive);
+}
+
+/* Negative Button */
+.finished_product .list .table .negative.button {
+	color			: var(--theme-negative);
+}
+
+/* Table Button Hover */
+.finished_product .list .table .button:hover {
+	background-color	: var(--background-tertiary);
+}
+
+/* Table Dropdown Menu */
+.finished_product .list .table .menu {
+	position		: absolute;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: flex-start;
+
+	z-index			: 1;
+	
+	background-color	: var(--background-primary);
+
+	box-shadow		: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Table Dropdown Button */
+.finished_product .list .table .menu button {
+	cursor			: pointer;
+	width			: 100%;
+	height			: 30px;
+
+	padding			: 15px;
+
+	display			: flex;
+	justify-content		: flex-start;
+	align-items		: center;
+
+	color			: var(--text-secondary);
+	background-color	: transparent;
+	border			: none;
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Table Dropdown Button Hover */
+.finished_product .list .table .menu button:hover {
+	background-color	: var(--background-secondary);
+}

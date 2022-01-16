@@ -1,10 +1,14 @@
 /* Declare Variables */
 :root {
 	--theme-primary		: #272728;
+	--theme-positive	: #08C108;
+	--theme-negative	: #DF0000;
 
 	--background-primary	: #FFFFFF;
 	--background-secondary	: #F9F9F9;
 	--background-tertiary	: #EFEFEF;
+
+	--border-primary	: #DDDDDD;
 
 	--text-primary		: #3D3D3D;
 	--text-secondary	: #646464;
