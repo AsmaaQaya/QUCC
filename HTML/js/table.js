@@ -7,9 +7,6 @@ let entries = [];
 //	Function called when add new task button is clicked
 let AddTableEntry = ({ title, deadline, priority }) => {
 
-	//	Increment count
-	count++;
-
 	//	Sanitise inputs
 	title = title.replace('<', '').replace('>', '');
 	deadline = deadline.replace('<', '').replace('>', '');
@@ -62,6 +59,10 @@ let RemoveTableEntry = (index) => {
 			//	Delete this entry
 			entries.splice(i, 1);
 
+			//	Save entries list to local storage
+			localStorage.setItem('entries', JSON.stringify(entries));
+			localStorage.setItem('count', count);
+
 			//	Delete element
 			setTimeout(() => entry.remove(), 150);
 
@@ -71,6 +72,25 @@ let RemoveTableEntry = (index) => {
 
 	//	Return the element being deleted
 	return entry;
+
+}
+
+//	Function called to load in entries from local storage
+let LoadEntries = () => {
+
+	//	Parse json and set it as entries
+	entries = JSON.parse(localStorage.getItem('entries')) || [];
+
+	//	Set count
+	count = parseInt(localStorage.getItem('count')) || 0;
+
+	//	Loop through each entry and add it to the table
+	entries.forEach(entry => {
+
+		//	Create a new table entry
+		AddTableEntry(entry);
+
+	})
 
 }
 
@@ -208,6 +228,15 @@ let ConfirmAddEntry = () => {
 	//	Add to list of entries
 	entries.push({ title, deadline, priority });
 
+	//	Increment count
+	count++;
+
+	//	Save entries list to local storage
+	localStorage.setItem('entries', JSON.stringify(entries));
+
+	//	Save count to local storage
+	localStorage.setItem('count', count);
+
 	//	Create a new entry
 	AddTableEntry({ title, deadline, priority });
 
@@ -215,3 +244,6 @@ let ConfirmAddEntry = () => {
 	entry.remove();
 
 }
+
+//	Subscribe event listener
+document.addEventListener('DOMContentLoaded', LoadEntries);
