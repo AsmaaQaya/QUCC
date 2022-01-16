@@ -1,0 +1,79 @@
+/*Cards*/
+.card{
+  /*position: relative;*/
+  border: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: white;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  margin: 1%;
+  width: 18rem; height: 35rem;
+}
+.card-content{
+  margin: 10%;
+}
+.card-img{
+  width: 30%;
+  height: 30%;
+  text-align: center;
+  margin-left: 40%;
+}
+.card .card-separator{
+  border: 1px solid #E5E5E5; 
+  width: 90%; 
+  border-radius:100px; 
+  background-color: #E5E5E5;
+}
+.card hr{
+  border: solid 3px black;
+  width: 10%;
+  border-radius: 7px;
+  background-color: black;
+}
+.card-date{
+  margin-left: 25%;
+}
+.card-icons{
+  color: black;
+  float: left;
+
+}
+
+.icon-text{
+  margin-top: 0%;
+  margin-bottom: 0;
+  color: #E5E5E5;
+  margin-left: 15%;
+}
+.card-body-info{
+  margin:  15%;
+}
+.card-button{
+  cursor      : pointer;
+
+  width     : 200px;
+  height      : 50px;
+
+  margin-top    : 20%;
+  /*to get the button to center*/
+  margin-left: 5%;
+
+  display     : flex;
+  justify-content   : center;
+  align-items   : center;
+
+  color     : var(--text-quaternary);
+  background-color  : var(--theme-primary);
+  border      : none;
+  border-radius   : 25px;
+
+  font-family   : Sulphur Point;
+  font-size   : 14px;
+  font-weight   : bold;
+
+  box-shadow    : 0 8px 25px rgba(0, 0, 0, 0.15);
+
+  transition    : 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
