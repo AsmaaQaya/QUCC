@@ -1,0 +1,277 @@
+/* Events */
+.events {
+	position		: relative;
+	width			: 100%;
+
+	margin-top		: 150px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: flex-start;
+	align-items		: center;
+}
+
+/* Background */
+.events .background {
+	position		: absolute;
+	width			: 100%;
+	height			: 100%;
+
+	background-image	: linear-gradient(to bottom, var(--background-primary) 0%, var(--background-secondary) 25%, var(--background-secondary) 100%);
+
+	z-index			: -1;
+}
+
+/* Cards */
+.events .cards {
+	position		: relative;
+	
+	margin-top		: 125px;
+	margin-bottom		: 175px;
+
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Pattern */
+.events .cards .pattern {
+	position		: absolute;
+
+	z-index			: -1;
+}
+
+/* Card */
+.events .cards .card {
+	position		: relative;
+	width			: 250px;
+	height			: 425px;
+	
+	margin			: 0 15px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	transition		: 0.5s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Front */
+.events .cards .card .front {
+	position		: absolute;
+	width			: 250px;
+	height			: 425px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+
+	background-color	: var(--background-primary);
+	border-radius		: 5px;
+
+	box-shadow		: 0 4px 25px rgba(0, 0, 0, 0.05);
+
+	backface-visibility		: hidden;
+	-moz-backface-visibility	: hidden;
+	-webkit-backface-visibility	: hidden;
+
+	transition		: 0.5s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Back */
+.events .cards .card .back {
+	position		: absolute;
+	width			: 300px;
+	height			: 550px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+
+	background-color	: var(--background-primary);
+	border-radius		: 5px;
+
+	box-shadow		: 0 4px 25px rgba(0, 0, 0, 0.05);
+
+	backface-visibility		: hidden;
+	-moz-backface-visibility	: hidden;
+	-webkit-backface-visibility	: hidden;
+
+	transform		: rotateY(180deg);
+
+	transition		: 0.5s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Flipped Card */
+.events .cards .flipped.card {
+	width			: 300px;
+}
+
+/* Flipped Front */
+.events .cards .flipped.card .front {
+	transform		: rotateY(180deg);
+}
+
+/* Flipped Back */
+.events .cards .flipped.card .back {
+	transform		: rotateY(0deg);
+}
+
+/* Underline */
+.events .cards .card .underline {
+	width			: 30px;
+	height			: 2px;
+
+	margin-bottom		: 5px;
+
+	background-color	: var(--text-primary);
+	border-radius		: 1px;
+}
+
+/* Header */
+.events .cards .card .header {
+	color			: var(--text-primary);
+
+	font-family		: Spartan;
+	font-size		: 14px;
+	font-weight		: bold;
+	text-align		: center;
+}
+
+/* Details */
+.events .cards .card .details {
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: center;
+	align-items		: flex-start;
+}
+
+/* Details Icons */
+.events .cards .card .details .icons {
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Icon Element */
+.events .cards .card .details .icons i {
+	margin			: 6px 0;
+
+	color			: var(--text-secondary);
+
+	font-size		: 10px;
+}
+
+/* Details Text */
+.events .cards .card .details .text {
+	margin-left		: 10px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: flex-start;
+}
+
+/* Text P Element */
+.events .cards .card .details .text p {
+	margin			: 5px 0;
+	
+	color			: var(--text-primary);
+
+	font-family		: Spartan;
+	font-size		: 10px;
+	text-align		: left;
+}
+
+/* Call To Action */
+.events .cards .card .call_to_action {
+	cursor			: pointer;
+
+	height			: 40px;
+
+	margin-top		: 50px;
+	padding			: 0 40px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	color			: var(--text-quaternary);
+	background-color	: var(--theme-primary);
+	border			: none;
+	border-radius		: 20px;
+
+	font-family		: Spartan;
+	font-size		: 10px;
+	text-align		: center;
+
+	box-shadow		: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Button Hover */
+.events .cards .card .call_to_action:hover {
+	border-radius		: 5px;
+
+	transform		: scale(1.05);
+}
+
+/* Close Button */
+.events .cards .card .close {
+	cursor			: pointer;
+
+	position		: absolute;
+	width			: 30px;
+	height			: 30px;
+	top			: 15px;
+	right			: 15px;
+
+	color			: var(--text-secondary);
+	background-color	: var(--background-primary);
+	border			: none;
+	border-radius		: 15px;
+
+	font-size		: 16px;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Close Button Hover */
+.events .cards .card .close:hover {
+	background-color	: var(--background-tertiary);
+}
+
+/* Logo */
+.events .cards .card .logo {
+	width			: 100px;
+	height			: 100px;
+
+	margin-bottom		: 25px;
+}
+
+/* Divider */
+.events .cards .card .divider {
+	width			: 225px;
+	height			: 1px;
+
+	margin			: 25px 0;
+
+	background-color	: var(--background-tertiary);
+}
+
+/* Description */
+.events .cards .card .description {
+	margin			: 0;
+
+	color			: var(--text-tertiary);
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	line-height		: 24px;
+	text-align		: center;
+}
