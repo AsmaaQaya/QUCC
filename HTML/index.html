@@ -178,46 +178,17 @@
 							<th class='small'>Priority</th>
 
 							<!-- Action -->
-							<th class='tiny'><i class='button fa fa-ellipsis-v'></i></th>
+							<th class='tiny actions' id='-1'>
+								
+								<!-- Button -->
+								<i onclick='ClickActionsButton(-1)' class='button fa fa-ellipsis-v'></i>
+							
+							</th>
 
 						</tr></thead>
 
 						<!-- Rows -->
-						<tbody class='rows'>
-
-							<!-- Row -->
-							<tr class='row' id='add_entry'>
-
-								<!-- Select -->
-								<td class='tiny'><i onclick='CancelAddEntry()' class='negative button fa fa-times'></i></td>
-		
-								<!-- Task -->
-								<td class='big'><input type='text' placeholder='Enter task name...'/></td>
-		
-								<!-- Deadline -->
-								<td class='small'><input type='date' placeholder='Enter task deadline...'/></td>
-
-								<!-- Priority -->
-								<td class='small'>
-									
-									<!-- Dropdown -->
-									<select placeholder='Enter task priority...'>
-
-										<!-- Options -->
-										<option value='Low'>Low</option>
-										<option value='Medium'>Medium</option>
-										<option value='High'>High</option>
-
-									</select>
-								
-								</td>
-		
-								<!-- Action -->
-								<td class='tiny'><i onclick='ConfirmAddEntry()' class='positive button fa fa-check'></i></td>
-		
-							</tr>
-
-						</tbody>
+						<tbody class='rows'></tbody>
 
 					</table>
 
