@@ -15,7 +15,7 @@ body {
 }
 
 /* Unlocked Scroll */
-body.active {
+body.unlocked {
 	overflow-y		: visible;
 }
 
@@ -83,4 +83,6 @@ section:not(.landing) .title .meta {
 	font-family		: Spartan;
 	font-size		: 14px;
 	text-align		: center;
+
+	animation-delay		: 1.5s !important;
 }

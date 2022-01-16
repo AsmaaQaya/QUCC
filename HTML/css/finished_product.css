@@ -26,6 +26,8 @@
 	position		: absolute;
 
 	z-index			: -1;
+
+	animation-delay		: 3.5s !important;
 }
 
 /* Table Background */
@@ -46,6 +48,8 @@
 	border-radius		: 10px;
 
 	box-shadow		: 0 4px 25px rgba(0, 0, 0, 0.15);
+
+	animation-delay		: 2.5s !important;
 }
 
 /* Table */
