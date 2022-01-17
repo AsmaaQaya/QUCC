@@ -4,6 +4,8 @@
 
 /* Body */
 body {
+	width			: initial;
+
 	margin			: 0;
 
 	overflow-x		: hidden;
