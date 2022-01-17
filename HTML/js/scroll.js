@@ -33,6 +33,15 @@ let LoadState = () => {
 			section.classList.add('active', 'preloaded');
 
 		}
+		else if (i == 2) {
+
+			//	Get elements section and navbar
+			let section = document.querySelector('.elements');
+
+			//	Set section to active
+			section.classList.add('active', 'preloaded');
+
+		}
 		else if (i == 3) {
 
 			//	Get finished product section and navbar
@@ -126,6 +135,31 @@ let CheckEvents = () => {
 
 }
 
+//	Function called to check if elements section should be visible
+let CheckElements = () => {
+
+	//	Get current scroll position
+	let scrollY = window.scrollY;
+
+	//	Get elements section
+	let section = document.querySelector('.elements');
+
+	//	Check if past elements section and not already visible
+	if (scrollY >= section.getBoundingClientRect().top && activeIndex < 2) {
+
+		//	Set section to active
+		section.classList.add('active');
+
+		//	Update active index
+		activeIndex = 2;
+
+		//	Save to session storage
+		sessionStorage.setItem('activeIndex', activeIndex);
+
+	}
+
+}
+
 //	Function called to check if finished product section should be visible
 let CheckFinishedProduct = () => {
 
@@ -154,6 +188,7 @@ let CheckFinishedProduct = () => {
 //	Subscribe to event listeners
 document.addEventListener('scroll', UpdateHeader);
 document.addEventListener('scroll', CheckEvents);
+document.addEventListener('scroll', CheckElements);
 document.addEventListener('scroll', CheckFinishedProduct);
 document.addEventListener('DOMContentLoaded', LoadState);
 document.addEventListener('DOMContentLoaded', CheckLanding);

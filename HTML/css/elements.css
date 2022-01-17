@@ -20,6 +20,8 @@
 	display			: flex;
 	justify-content		: center;
 	align-items		: center;
+
+	animation-delay		: 4s !important;
 }
 
 /* Pattern */
@@ -50,10 +52,14 @@
 .elements .carousel {
 	height			: 600px;
 
+	margin-bottom		: 50px;
+
 	display			: flex;
 	flex-direction		: row;
 	justify-content		: center;
 	align-items		: center;
+
+	animation-delay		: 3.5s !important;
 }
 
 /* Arrows */
