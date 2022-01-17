@@ -1,0 +1,213 @@
+/* Elements */
+.elements {
+	position		: relative;
+	width			: 100%;
+
+	margin			: 150px 0;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: flex-start;
+	align-items		: center;
+}
+
+/* Background */
+.elements .background {
+	position		: absolute;
+	width			: 100%;
+	top			: 150px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	animation-delay		: 4s !important;
+}
+
+/* Pattern */
+.elements .background .pattern {
+	position		: absolute;
+	top			: 0;
+
+	z-index			: -1;
+}
+
+/* Background Text */
+.elements .background .text {
+	cursor			: default;
+
+	position		: absolute;
+
+	color			: var(--background-quaternary);
+
+	font-family		: Spartan;
+	font-size		: 144px;
+	font-weight		: bold;
+	text-align		: center;
+
+	z-index			: -2;
+}
+
+/* Carousel */
+.elements .carousel {
+	height			: 600px;
+
+	margin-bottom		: 50px;
+
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: center;
+	align-items		: center;
+
+	animation-delay		: 3.5s !important;
+}
+
+/* Arrows */
+.elements .carousel .arrows {
+	position		: absolute;
+	width			: 1100px;
+	
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: space-between;
+	align-items		: center;
+}
+
+/* Arrow Button */
+.elements .carousel .arrows .button {
+	cursor			: pointer;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	color			: var(--text-primary);
+
+	font-size		: 50px;
+
+	transition		: 0.15s cubic-bezier(0.4, 0, 0.6, 1) 0s;
+}
+
+/* Button Hover */
+.elements .carousel .arrows .button:hover {
+	transform		: scale(1.25);
+}
+
+/* Card */
+.elements .carousel .card {
+	position		: absolute;
+	width			: 750px;
+
+	padding			: 50px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+
+	background-color	: var(--background-primary);
+	border-radius		: 5px;
+
+	opacity			: 1;
+
+	box-shadow		: 0 4px 25px 5px rgba(0, 0, 0, 0.05);
+
+	transition		: transform 0.5s cubic-bezier(0.4, 0, 0.6, 1) 0s,
+				  opacity 0.25s cubic-bezier(0.4, 0, 0.6, 1) 0.25s;
+}
+
+/* Left Card */
+.elements .carousel .left.card {
+	pointer-events		: none;
+
+	opacity			: 0;
+
+	transform		: translateX(-100%);
+}
+
+/* Right Card */
+.elements .carousel .right.card {
+	pointer-events		: none;
+	
+	opacity			: 0;
+
+	transform		: translateX(100%);
+}
+
+/* Card Header */
+.elements .carousel .card .header {
+	margin			: 0;
+
+	color			: var(--text-primary);
+
+	font-family		: Spartan;
+	font-size		: 32px;
+	font-weight		: bold;
+	text-align		: center;
+}
+
+/* Description */
+.elements .carousel .card .description {
+	margin			: 15px 0;
+
+	color			: var(--text-secondary);
+
+	font-family		: Spartan;
+	font-size		: 14px;
+	line-height		: 24px;
+	text-align		: center;
+}
+
+/* Meta */
+.elements .carousel .card .meta {
+	margin			: 10px 0;
+
+	color			: var(--text-primary);
+
+	font-family		: Spartan;
+	font-size		: 14px;
+	line-height		: 24px;
+	font-weight		: bold;
+	text-align		: center;
+}
+
+/* Showcase */
+.elements .carousel .card .showcase {
+	display			: flex;
+	flex-direction		: row;
+	justify-content		: center;
+	align-items		: center;
+}
+
+/* Input */
+.elements .carousel .card .showcase .input {
+	width			: 300px;
+	height			: 200px;
+
+	margin			: 0 15px;
+	padding			: 25px;
+
+	overflow-x		: auto;
+
+	color			: var(--text-secondary);
+	background-color	: var(--background-secondary);
+	border-radius		: 15px;
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	line-height		: 24px;
+	white-space		: nowrap;
+}
+
+/* Output */
+.elements .carousel .card .showcase .output {
+	width			: 300px;
+	height			: 200px;
+
+	margin			: 0 15px;
+	padding			: 25px;
+
+	overflow-x		: auto;
+	background-color	: var(--background-secondary);
+	border-radius		: 15px;
+}

@@ -4,6 +4,9 @@
 
 /* Body */
 body {
+	width			: initial;
+	min-width		: 100vw;
+
 	margin			: 0;
 
 	overflow-x		: hidden;
@@ -64,8 +67,7 @@ section:not(.landing) .title .header {
 
 /* Section Header Bold */
 section:not(.landing) .title .header .bold {
-	margin			: 0;
-	margin-left		: 8px;
+	margin			: 0 8px;
 
 	color			: var(--theme-primary);
 
