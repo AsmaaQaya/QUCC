@@ -1,5 +1,5 @@
 //	Which index is the carousel on
-let index = 0;
+let index = parseInt(localStorage.getItem('carouselIndex')) || 0;
 
 //	Function called on startup to initialise carousel
 let InitialiseCarousel = () => {
@@ -49,6 +49,9 @@ let MoveLeft = () => {
 	//	Decrement index
 	index--;
 
+	//	Save index to local storage
+	localStorage.setItem('carouselIndex', index);
+
 }
 
 //	Function called to move carousel to the right
@@ -63,6 +66,9 @@ let MoveRight = () => {
 
 	//	Increment index
 	index++;
+
+	//	Save index to local storage
+	localStorage.setItem('carouselIndex', index);
 
 }
 

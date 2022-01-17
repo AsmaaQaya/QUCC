@@ -5,6 +5,7 @@
 /* Body */
 body {
 	width			: initial;
+	min-width		: 100vw;
 
 	margin			: 0;
 
