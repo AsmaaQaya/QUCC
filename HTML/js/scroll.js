@@ -92,19 +92,31 @@ let CheckLanding = () => {
 	let navbar = document.querySelector('.navbar');
 	let body = document.querySelector('body');
 
-	//	Check if past landing section and not already visible
-	if (scrollY >= 0 && activeIndex < 0) {
+	//	Check if past landing section
+	if (scrollY >= 0) {
 
-		//	Set section, body and navbar to active
-		section.classList.add('active');
-		navbar.classList.add('active');
-		setTimeout(() => body.classList.add('unlocked'), 5500);
+		//	If not already visible
+		if (activeIndex < 0) {
 
-		//	Update active index
-		activeIndex = 0;
+			//	Set section, body and navbar to active
+			section.classList.add('active');
+			navbar.classList.add('active');
+			setTimeout(() => body.classList.add('unlocked'), 5500);
 
-		//	Save to session storage
-		sessionStorage.setItem('activeIndex', activeIndex);
+			//	Update active index
+			activeIndex = 0;
+
+			//	Save to session storage
+			sessionStorage.setItem('activeIndex', activeIndex);
+
+		}
+		else if (document.querySelector('.events').getBoundingClientRect().top > 150) {
+
+			//	Switch active section to this
+			document.querySelector('.navbar .active.link').classList.remove('active');
+			document.querySelector('#landing_link').classList.add('active');
+
+		}
 
 	}
 
@@ -113,23 +125,32 @@ let CheckLanding = () => {
 //	Function called to check if events section should be visible
 let CheckEvents = () => {
 
-	//	Get current scroll position
-	let scrollY = window.scrollY;
-
 	//	Get events section
 	let section = document.querySelector('.events');
 
-	//	Check if past events section and not already visible
-	if (scrollY >= section.getBoundingClientRect().top && activeIndex < 1) {
+	//	Check if past events section
+	if (section.getBoundingClientRect().top <= 150) {
 
-		//	Set section to active
-		section.classList.add('active');
+		//	If not already visible
+		if (activeIndex < 1) {
 
-		//	Update active index
-		activeIndex = 1;
+			//	Set section to active
+			section.classList.add('active');
 
-		//	Save to session storage
-		sessionStorage.setItem('activeIndex', activeIndex);
+			//	Update active index
+			activeIndex = 1;
+
+			//	Save to session storage
+			sessionStorage.setItem('activeIndex', activeIndex);
+
+		}
+		else if (document.querySelector('.elements').getBoundingClientRect().top >  150) {
+
+			//	Switch active section to this
+			document.querySelector('.navbar .active.link').classList.remove('active');
+			document.querySelector('#events_link').classList.add('active');
+
+		}
 
 	}
 
@@ -138,23 +159,32 @@ let CheckEvents = () => {
 //	Function called to check if elements section should be visible
 let CheckElements = () => {
 
-	//	Get current scroll position
-	let scrollY = window.scrollY;
-
 	//	Get elements section
 	let section = document.querySelector('.elements');
 
-	//	Check if past elements section and not already visible
-	if (scrollY >= section.getBoundingClientRect().top && activeIndex < 2) {
+	//	Check if past elements section
+	if (section.getBoundingClientRect().top <= 150) {
 
-		//	Set section to active
-		section.classList.add('active');
+		//	If not already visible
+		if (activeIndex < 2) {
 
-		//	Update active index
-		activeIndex = 2;
+			//	Set section to active
+			section.classList.add('active');
 
-		//	Save to session storage
-		sessionStorage.setItem('activeIndex', activeIndex);
+			//	Update active index
+			activeIndex = 2;
+
+			//	Save to session storage
+			sessionStorage.setItem('activeIndex', activeIndex);
+
+		}
+		else if (document.querySelector('.finished_product').getBoundingClientRect().top > 150) {
+
+			//	Switch active section to this
+			document.querySelector('.navbar .active.link').classList.remove('active');
+			document.querySelector('#elements_link').classList.add('active');
+
+		}
 
 	}
 
@@ -169,17 +199,29 @@ let CheckFinishedProduct = () => {
 	//	Get finished product section
 	let section = document.querySelector('.finished_product');
 
-	//	Check if past finished product section and not already visible
-	if (scrollY >= section.getBoundingClientRect().top && activeIndex < 3) {
+	//	Check if past finished product section
+	if (section.getBoundingClientRect().top <= 150) {
 
-		//	Set section to active
-		section.classList.add('active');
+		//	If not already visible
+		if (activeIndex < 3) {
 
-		//	Update active index
-		activeIndex = 3;
+			//	Set section to active
+			section.classList.add('active');
 
-		//	Save to session storage
-		sessionStorage.setItem('activeIndex', activeIndex);
+			//	Update active index
+			activeIndex = 3;
+
+			//	Save to session storage
+			sessionStorage.setItem('activeIndex', activeIndex);
+
+		}
+		else {
+
+			//	Switch active section to this
+			document.querySelector('.navbar .active.link').classList.remove('active');
+			document.querySelector('#finished_product_link').classList.add('active');
+
+		}
 
 	}
 
@@ -187,6 +229,7 @@ let CheckFinishedProduct = () => {
 
 //	Subscribe to event listeners
 document.addEventListener('scroll', UpdateHeader);
+document.addEventListener('scroll', CheckLanding);
 document.addEventListener('scroll', CheckEvents);
 document.addEventListener('scroll', CheckElements);
 document.addEventListener('scroll', CheckFinishedProduct);
