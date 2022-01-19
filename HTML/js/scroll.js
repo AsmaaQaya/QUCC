@@ -110,7 +110,7 @@ let CheckLanding = () => {
 			sessionStorage.setItem('activeIndex', activeIndex);
 
 		}
-		else if (document.querySelector('.events').getBoundingClientRect().top > 150) {
+		else if (document.querySelector('.events').getBoundingClientRect().top > 200) {
 
 			//	Switch active section to this
 			document.querySelector('.navbar .active.link').classList.remove('active');
@@ -129,7 +129,7 @@ let CheckEvents = () => {
 	let section = document.querySelector('.events');
 
 	//	Check if past events section
-	if (section.getBoundingClientRect().top <= 150) {
+	if (section.getBoundingClientRect().top <= 200) {
 
 		//	If not already visible
 		if (activeIndex < 1) {
@@ -144,7 +144,7 @@ let CheckEvents = () => {
 			sessionStorage.setItem('activeIndex', activeIndex);
 
 		}
-		else if (document.querySelector('.elements').getBoundingClientRect().top >  150) {
+		else if (document.querySelector('.elements').getBoundingClientRect().top > 200) {
 
 			//	Switch active section to this
 			document.querySelector('.navbar .active.link').classList.remove('active');
@@ -163,7 +163,7 @@ let CheckElements = () => {
 	let section = document.querySelector('.elements');
 
 	//	Check if past elements section
-	if (section.getBoundingClientRect().top <= 150) {
+	if (section.getBoundingClientRect().top <= 200) {
 
 		//	If not already visible
 		if (activeIndex < 2) {
@@ -178,7 +178,7 @@ let CheckElements = () => {
 			sessionStorage.setItem('activeIndex', activeIndex);
 
 		}
-		else if (document.querySelector('.finished_product').getBoundingClientRect().top > 150) {
+		else if (document.querySelector('.finished_product').getBoundingClientRect().top > 200) {
 
 			//	Switch active section to this
 			document.querySelector('.navbar .active.link').classList.remove('active');
@@ -200,7 +200,7 @@ let CheckFinishedProduct = () => {
 	let section = document.querySelector('.finished_product');
 
 	//	Check if past finished product section
-	if (section.getBoundingClientRect().top <= 150) {
+	if (section.getBoundingClientRect().top <= 200) {
 
 		//	If not already visible
 		if (activeIndex < 3) {
