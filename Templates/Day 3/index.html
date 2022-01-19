@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+	<!-- Head -->
+	<head>
+
+		<!-- Tags -->
+		<meta charset='UTF-8'/>
+		<title>To-Do List</title>
+
+		<!-- Import Stylesheet -->
+		<link rel='stylesheet' type='text/css' href='./styles.css'/>
+
+	</head>
+
+	<!-- Body -->
+	<body class='container'>
+
+		<!-- Page header, usually big and bold -->
+		<div class='header'>My <h1 class='bold'>To Do</h1> List</div>
+
+		<!-- Describes what this page is about -->
+		<p class='description'>Find all your to-do points here!</p>
+
+		<!-- Provides a background for the table -->
+		<div class='background'>
+
+			<!-- Table containing all the to-do points -->
+			<table class='table'>
+
+				<!-- Table header -->
+				<thead class='head'>
+
+					<!-- Task name column -->
+					<th class='big'>Task Name</th>
+
+					<!-- Task deadline column -->
+					<th class='small'>Deadline</th>
+
+					<!-- Task priority column -->
+					<th class='small'>Priority</th>
+
+					<!-- Task actions column (empty column for buttons) -->
+					<th></th>
+
+				</thead>
+
+				<!-- Table body -->
+				<tbody class='body'>
+
+					<!-- SAMPLE DATA -->
+					<tr>
+						<td>Attend session two</td>
+						<td>19/01/22</td>
+						<td>High</td>
+						<td><button class='primary'>Complete</button><button class='secondary'>X</button></td>
+					</tr>
+
+				</tbody>
+
+			</table>
+
+			<!-- Hyperlink pointing to form page -->
+			<a class='button' href='./form.html'>Add a New Task</a>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,165 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Variables */
+:root {
+	--theme-primary		: #272728;
+	--theme-secondary	: #DDDDDD;
+
+	--text-primary		: #3D3D3D;
+	--text-secondary	: #646464;
+	--text-tertiary		: #FFFFFF;
+
+	--background-primary	: #FFFFFF;
+
+	--underline-primary	: #EFEFEF;
+}
+
+/* Container */
+.container {
+	min-height		: 100vh;
+
+	margin			: 0;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: center;
+
+	font-family		: Spartan;
+}
+
+/* Header */
+.header {
+	color			: var(--text-secondary);
+
+	font-size		: 24px;
+	font-weight		: normal;
+}
+
+/* Header Bold */
+.header .bold {
+	margin			: 0;
+
+	display			: inline-block;
+
+	color			: var(--text-primary);
+
+	font-size		: 24px;
+	font-weight		: bold;
+}
+
+/* Description */
+.description {
+	margin			: 15px 0;
+
+	color			: var(--text-secondary);
+
+	font-size		: 14px;
+	text-align		: center;
+}
+
+/* Button */
+.button {
+	cursor			: pointer;
+
+	height			: 40px;
+
+	padding			: 0 50px;
+
+	display			: flex;
+	justify-content		: center;
+	align-items		: center;
+
+	color			: var(--text-tertiary);
+	background-color	: var(--theme-primary);
+	border			: none;
+	border-radius		: 20px;
+
+	font-size		: 10px;
+	font-weight		: 500;
+	text-decoration		: none;
+}
+
+/* Table Background */
+.background {
+	min-height		: 300px;
+
+	margin			: 25px 0;
+	padding			: 25px;
+	padding-top		: 10px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: space-between;
+	align-items		: center;
+
+	background-color	: var(--background-primary);
+	border-radius		: 10px;
+
+	box-shadow		: 0 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Table */
+.table {
+
+	border-collapse		: collapse;
+}
+
+/* Head */
+.head {
+	height			: 50px;
+
+	color			: var(--text-primary);
+	border-bottom		: 1px solid var(--underline-primary);
+
+	font-size		: 14px;
+	text-align		: left;
+}
+
+/* Big Column */
+.big {
+	width			: 500px;
+}
+
+/* Small Column */
+.small {
+	width			: 125px;
+}
+
+/* Tasks */
+.body tr {
+	height			: 50px;
+
+	color			: var(--text-secondary);
+
+	font-size		: 12px;
+}
+
+/* Table Secondary Button */
+.body tr button.secondary {
+	width			: 30px;
+	height			: 30px;
+
+	display			: inline-block;
+
+	color			: var(--text-secondary);
+	background-color	: var(--theme-secondary);
+	border			: none;
+	border-radius		: 15px;
+}
+
+/* Table Primary Button */
+.body tr button.primary {
+	width			: 100px;
+	height			: 30px;
+
+	margin-right		: 5px;
+
+	display			: inline-block;
+
+	color			: var(--text-tertiary);
+	background-color	: var(--theme-primary);
+	border			: none;
+	border-radius		: 15px;
+}
