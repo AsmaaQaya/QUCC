@@ -12,6 +12,8 @@
 
 	--background-primary	: #FFFFFF;
 
+	--border-primary	: #DDDDDD;
+
 	--underline-primary	: #EFEFEF;
 }
 
@@ -76,14 +78,14 @@
 	border			: none;
 	border-radius		: 20px;
 
-	font-size		: 10px;
-	font-weight		: 500;
+	font-size		: 12px;
+	font-weight		: 400;
 	text-decoration		: none;
 }
 
 /* Table Background */
 .background {
-	min-height		: 300px;
+	min-height		: 450px;
 
 	margin			: 25px 0;
 	padding			: 25px;
@@ -138,6 +140,8 @@
 
 /* Table Secondary Button */
 .body tr button.secondary {
+	cursor			: pointer;
+	
 	width			: 30px;
 	height			: 30px;
 
@@ -147,10 +151,15 @@
 	background-color	: var(--theme-secondary);
 	border			: none;
 	border-radius		: 15px;
+
+	font-family		: Spartan;
+	font-size		: 10px;
 }
 
 /* Table Primary Button */
 .body tr button.primary {
+	cursor			: pointer;
+
 	width			: 100px;
 	height			: 30px;
 
@@ -162,4 +171,102 @@
 	background-color	: var(--theme-primary);
 	border			: none;
 	border-radius		: 15px;
+
+	font-family		: Spartan;
+	font-size		: 10px;
+}
+
+/* Form Container */
+.form {
+	width			: 275px;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items		: flex-start;
+}
+
+/* Form Row */
+.form .row {
+	width			: 100%;
+
+	margin			: 10px 0;
+
+	display			: flex;
+	flex-direction		: column;
+	justify-content		: flex-start;
+	align-items		: flex-start;
+
+	color			: var(--text-primary);
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+}
+
+/* Form Input */
+.form input {
+	width			: calc(100% - 5px - 2em);
+	height			: 36px;
+
+	padding			: 0 1em;
+
+	color			: var(--text-primary);
+	outline			: none;
+	border			: 1px solid var(--border-primary);
+	border-radius		: 5px;
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Form Input Placeholder */
+.form input::placeholder {
+	color			: var(--text-secondary);
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Form Dropdown */
+.form select {
+	width			: calc(100% - 5px);
+	height			: 36px;
+
+	padding			: 0 1em;
+
+	color			: var(--text-primary);
+	border			: 1px solid var(--border-primary);
+	border-radius		: 5px;
+
+	font-family		: Spartan;
+	font-size		: 12px;
+	font-weight		: normal;
+	text-align		: left;
+}
+
+/* Form Button */
+.form button {
+	cursor			: pointer;
+	
+	width			: 200px;
+	height			: 40px;
+
+	margin-top		: 25px;
+
+	display			: inline-block;
+	align-self		: center;
+
+	color			: var(--text-tertiary);
+	background-color	: var(--theme-primary);
+	border			: none;
+	border-radius		: 20px;
+
+	font-family		: Spartan;
+	font-weight		: 500;
+	font-size		: 12px;
 }

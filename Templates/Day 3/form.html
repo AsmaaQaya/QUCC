@@ -5,37 +5,50 @@
 	<head>
 
 		<!-- Tags -->
+		<meta charset='UTF-8'/>
 		<title>Add Task</title>
+
+		<!-- Import Stylesheet -->
+		<link rel='stylesheet' type='text/css' href='./styles.css'/>
 
 	</head>
 
 	<!-- Body -->
-	<body>
+	<body class='container'>
 
 		<!-- Page header, usually big and bold -->
-		<h1>Add A New Task</h1>
+		<div class='header'>Add A <h1 class='bold'>New Task</h1></div>
+
+		<!-- Page description, tells us what this page is about -->
+		<p class='description'>Add new tasks to your to do list here!</p>
 
 		<!-- HTML Form that will create a new task when submitted -->
-		<form action='./index.html'>
+		<form class='form' action='./index.html'>
 
 			<!-- Task Name Input -->
-			<label for='task_name'>Task Name</label><br/>
-			<input type='text' id='task_name' name='task_name' placeholder='Enter task name...'/><br/>
+			<div class='row'>
+				<label for='task_name'>Task Name</label>
+				<input type='text' id='task_name' name='task_name' placeholder='Enter task name...'/>
+			</div>
 
 			<!-- Task Deadline Input -->
-			<label for='task_deadline'>Task Deadline</label><br/>
-			<input type='date' id='task_deadline' name='task_deadline' placeholder='Enter task deadline...'/><br/>
+			<div class='row'>
+				<label for='task_deadline'>Task Deadline</label>
+				<input type='date' id='task_deadline' name='task_deadline' placeholder='Enter task deadline...'/>
+			</div>
 
 			<!-- Task Priority Input -->
-			<label for='task_priority'>Task Priority</label><br/>
-			<select id='task_priority' name='task_priority' placeholder='Enter task priority'>
-				<option value='Low'>Low</option>
-				<option value='Medium'>Medium</option>
-				<option value='High'>High</option>
-			</select><br/>
+			<div class='row'>
+				<label for='task_priority'>Task Priority</label>
+				<select id='task_priority' name='task_priority' placeholder='Enter task priority'>
+					<option value='Low'>Low</option>
+					<option value='Medium'>Medium</option>
+					<option value='High'>High</option>
+				</select>
+			</div>
 
 			<!-- Submit Button -->
-			<input type='submit'/>
+			<button>Add Task</button>
 
 		</form>
 
