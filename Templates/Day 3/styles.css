@@ -109,7 +109,7 @@
 }
 
 /* Head */
-.head {
+.table .head {
 	height			: 50px;
 
 	color			: var(--text-primary);
@@ -120,17 +120,17 @@
 }
 
 /* Big Column */
-.big {
+.table .big {
 	width			: 500px;
 }
 
 /* Small Column */
-.small {
+.table .small {
 	width			: 125px;
 }
 
 /* Tasks */
-.body tr {
+.table .body .row {
 	height			: 50px;
 
 	color			: var(--text-secondary);
@@ -139,7 +139,7 @@
 }
 
 /* Table Secondary Button */
-.body tr button.secondary {
+.table .body .row button.secondary {
 	cursor			: pointer;
 	
 	width			: 30px;
@@ -157,7 +157,7 @@
 }
 
 /* Table Primary Button */
-.body tr button.primary {
+.table .body .row button.primary {
 	cursor			: pointer;
 
 	width			: 100px;
