@@ -138,41 +138,33 @@
 	font-size		: 12px;
 }
 
-/* Table Secondary Button */
-.table .body .row button.secondary {
-	cursor			: pointer;
-	
-	width			: 30px;
+/* Table Primary Button */
+.table .body .row button.primary {
+	width			: 100px;
 	height			: 30px;
 
-	display			: inline-block;
+	margin-right		: 5px;
+	padding			: 0;
 
-	color			: var(--text-secondary);
-	background-color	: var(--theme-secondary);
-	border			: none;
-	border-radius		: 15px;
+	display			: inline-block;
 
 	font-family		: Spartan;
 	font-size		: 10px;
 }
 
-/* Table Primary Button */
-.table .body .row button.primary {
-	cursor			: pointer;
-
-	width			: 100px;
+/* Table Secondary Button */
+.table .body .row button.secondary {
+	width			: 30px;
 	height			: 30px;
 
-	margin-right		: 5px;
+	padding			: 0;
 
 	display			: inline-block;
 
-	color			: var(--text-tertiary);
-	background-color	: var(--theme-primary);
-	border			: none;
-	border-radius		: 15px;
+	color			: var(--text-secondary);
+	background-color	: var(--theme-secondary);
 
-	font-family		: Spartan;
+	padding			: 0;
 	font-size		: 10px;
 }
 
