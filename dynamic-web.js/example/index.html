@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'/>
+    <title>To-Do List</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel='stylesheet' type='text/css' href='css/styles.css'/>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+
+<header class='head'>
+    <div class='app-title'>My Tasks List</div>
+
+    <form id="taskForm" class='form'>
+        <div class='row'>
+            <label for='task'>Task</label>
+            <input type='text' id="task" name="task" required/>
+        </div>
+
+        <div class='row'>
+            <label for='deadline'>Deadline</label>
+            <input type='date' id='deadline' name='deadline' required/>
+        </div>
+
+        <div class='row'>
+            <label for='priority'>Priority</label>
+            <select id='priority' name='priority' required>
+                <option value=''></option>
+                <option value='Low'>Low</option>
+                <option value='Medium'>Medium</option>
+                <option value='High'>High</option>
+            </select>
+        </div>
+
+        <button type="submit" class='button'>Add Task</button>
+    </form>
+</header>
+
+<ul id="tasksList">
+    <li data-task-id="100">
+        <i class="material-icons-outlined delete-icon">delete</i>
+        <label>
+            <input type="checkbox">
+            Learn HTML &amp; CSS (High priority. Due on 25/02/2022)
+        </label>
+    </li>
+    <li data-task-id="123">
+        <i class="material-icons-outlined delete-icon">delete</i>
+        <label>
+            <input type="checkbox">
+            Learn JavaScript (Medium priority. Due on 01/03/2022)
+        </label>
+    </li>
+    <li data-task-id="234">
+        <i class="material-icons-outlined delete-icon">delete</i>
+        <label>
+            <input type="checkbox">
+            Learn Web API (Low priority. Due on 01/04/2022)
+        </label>
+    </li></ul>
+</body>
+</html>

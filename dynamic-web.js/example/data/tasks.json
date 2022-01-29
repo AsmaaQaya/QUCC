@@ -1,0 +1,23 @@
+[
+  {
+    "id": 100,
+    "task": "Learn HTML & CSS",
+    "deadline": "25/02/2022",
+    "priority": "High",
+    "isCompleted": true
+  },
+  {
+    "id": 123,
+    "task": "Learn JavaScript",
+    "deadline": "01/03/2022",
+    "priority": "Medium",
+    "isCompleted": false
+  },
+  {
+    "id": 234,
+    "task": "Learn Web API",
+    "deadline": "01/04/2022",
+    "priority": "Low",
+    "isCompleted": false
+  }
+]
